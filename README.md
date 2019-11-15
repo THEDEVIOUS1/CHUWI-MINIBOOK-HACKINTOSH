@@ -37,7 +37,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 
 - TouchScreen / Stylus
 - Fingerprint Sensor
-- Internal Wi-Fi ( Intel AC 7625 )
+- Internal Wi-Fi ( Intel AC 3165 )
 - Card Reader
 
 ## Credits
