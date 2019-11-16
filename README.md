@@ -15,23 +15,31 @@ If you see anything that could be added or changed don't hesitate to make a pull
 6. Install additionals drivers
 7. Reboot and enjoy !
 
+## Changing the display orientation
+
+To correct the display orientation within macOS, press and hold down cmd+opt (Windows+alt) and open System Preferences. Keep holding down those two buttons and click on Displays. The screen orientation option will now appear even for the built-in display. Set it to 270 degrees for the correct orientation.
+
+
 ### Additional drivers
 
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
+
 ## What works
 
-- Graphics Acceleration
+- Graphic Acceleration
 - Bluetooth
-- Brigthness control
+- Brigthness
 - Audio
 - Power Management
-- Battery Status 
-- USB and USB Mapping
+- Battery 
+- USB
 - Keyboard
 - Camera
-- Sleep / Wake ( Known issues on Catalina 10.15.1 )
+- Sleep / Wake ( timed & manual sleep sem to work fine...button & lid appear to be problematic) )
 - TouchPad 
+- HDMI / Type-C
+
 
 ## What doesn't work
 
@@ -39,9 +47,11 @@ If you see anything that could be added or changed don't hesitate to make a pull
 - Fingerprint Sensor
 - Internal Wi-Fi ( Intel AC 3165 )
 - Card Reader
+- Emmc
+
 
 ## Credits
 
 [All users from the GPD Discord]() <br>
 [Fewt's Hackintosh guide](https://fewt.gitbook.io/laptopguide/) <br>
-[GPD for making the great P2 MAX](http://gpd.hk/) <br>
+[CHUWI for making the great Minibook](https://www.chuwi.com/cn/) <br>
