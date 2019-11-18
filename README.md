@@ -36,7 +36,7 @@ To correct the display orientation within macOS, press and hold down cmd+opt (Wi
 - USB
 - Keyboard
 - Camera
-- Sleep / Wake ( timed & manual sleep seem to work fine but button & lid appear to be problematic in 10.14.6 )
+- Sleep / Wake ( timed & manual sleep seem to work fine but button & lid appear to be problematic in 10.14.6 /10.15.1 )
 - TrackPoint 
 - HDMI / Type-C
 
