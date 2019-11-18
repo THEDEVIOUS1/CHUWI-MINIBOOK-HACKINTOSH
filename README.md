@@ -15,9 +15,17 @@ If you see anything that could be added or changed don't hesitate to make a pull
 6. Install additionals drivers
 7. Reboot and enjoy !
 
+
 ## Changing the display orientation
 
 To correct the display orientation within macOS, press and hold down cmd+opt (Windows+alt) and open System Preferences. Keep holding down those two buttons and click on Displays. The screen orientation option will now appear even for the built-in display. Set it to 270 degrees for the correct orientation.
+
+
+## Enabling HiDPI mode
+
+to enable HiDPI mode ( adds 960 x 600 ) enter the following command in terminal post-installation then reboot:
+
+sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 
 
 ### Additional drivers
