@@ -58,6 +58,13 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Emmc
 
 
+## Other Operating Systems
+
+  ## OS           ## Version         ## Issues
+- [Andrioid x86](https://www.android-x86.org/)  Android-x86 8.1-r3  everything works
+- [Chrome](https://arnoldthebat.co.uk/wordpress/)  SPECIAL BUILD – R78-12499.B  everything works
+- [Linux](https://manjaro.org/)  Manjaro-cinnamon-18.0.4-stable-x86_64  everything works
+
 ## Credits
 
 [All users from the GPD Discord]() <br>
