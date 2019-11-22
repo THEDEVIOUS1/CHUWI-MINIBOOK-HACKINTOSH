@@ -61,7 +61,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 ## Other Operating Systems
 
 OS ( Version ) ( Issues )
-- [Android](https://www.android-x86.org/)    ( Android-x86 8.1-r3 )                   ( none )
+- [Android](https://www.android-x86.org/)    ( Android-x86 9.0-rc1 )                   ( cast screen, auto rotate broken )
 - [Chrome](https://arnoldthebat.co.uk/wordpress/) ( SPECIAL BUILD – R78-12499.B )          ( none )
 - [Linux](https://manjaro.org/)                   ( Manjaro-cinnamon-18.0.4-stable-x86_64 ) ( none )
 
