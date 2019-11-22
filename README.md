@@ -60,10 +60,10 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 
 ## Other Operating Systems
 
-  ## OS           ## Version         ## Issues
-- [Andrioid x86](https://www.android-x86.org/)  Android-x86 8.1-r3  everything works
-- [Chrome](https://arnoldthebat.co.uk/wordpress/)  SPECIAL BUILD – R78-12499.B  everything works
-- [Linux](https://manjaro.org/)  Manjaro-cinnamon-18.0.4-stable-x86_64  everything works
+  ## OS           Version         Issues
+- [Andrioid x86](https://www.android-x86.org/) ( Android-x86 8.1-r3 ) none
+- [Chrome](https://arnoldthebat.co.uk/wordpress/) ( SPECIAL BUILD – R78-12499.B ) none
+- [Linux](https://manjaro.org/) ( Manjaro-cinnamon-18.0.4-stable-x86_64 )  none
 
 ## Credits
 
