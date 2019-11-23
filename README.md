@@ -18,7 +18,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 
 ## Changing the display orientation
 
-To correct the display orientation within macOS use [this app](https://www.magesw.com/displayrotation/) and set the orientation to reverse landscape OR  press and hold down cmd+opt (Windows+alt) and open System Preferences. Keep holding down those two buttons and click on Displays. The screen orientation option will now appear even for the built-in display. Set it to 270 degrees for the correct orientation.
+To correct the display orientation within macOS use [this app](https://www.magesw.com/displayrotation/) and set the orientation to portrait flipped OR  press and hold down cmd+opt (Windows+alt) and open System Preferences. Keep holding down those two buttons and click on Displays. The screen orientation option will now appear even for the built-in display. Set it to 270 degrees for the correct orientation.
 
 
 ## Enabling HiDPI mode
@@ -30,7 +30,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 
 ## Setting resolutions over 1080p
 1. flash modified bios (format usb stick to fat 32, copy files inside of folder to root of drive then reboot)
-2. enter bios using f7(fn + 7), go to chipset, graphics options, dvmt allocated and change to 64mb
+2. enter bios using f7(fn + 7) then go to chipset -> system agent -> graphics configuratyion -> dvmt allocated and change to 64mb
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
 ### Additional drivers
