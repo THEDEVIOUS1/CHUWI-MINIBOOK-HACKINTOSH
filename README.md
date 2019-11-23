@@ -28,6 +28,11 @@ to enable HiDPI mode ( adds 960 x 600 ) enter the following command in terminal 
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 
 
+## Setting resolutions over 1080p
+1. flash modified bios (format usb stick to fat 32, copy files inside of folder to root of drive then reboot)
+2. enter bios using f7(fn + 7), go to chipset, graphics options, dvmt allocated and change to 64mb
+3. either delete config.plist and rename config4k to config OR select config4k at clover boot screen under options
+
 ### Additional drivers
 
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
