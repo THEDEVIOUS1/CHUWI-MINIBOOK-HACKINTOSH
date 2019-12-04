@@ -49,7 +49,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - USB
 - Keyboard
 - Camera
-- Sleep / Wake ( lid, timed & manual sleep seem to work fine but button appears to be problematic in 10.14.6 /10.15.1 )
+- Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works in 10.14.6 /10.15.1 )
 - TrackPoint 
 - HDMI / Type-C
 
