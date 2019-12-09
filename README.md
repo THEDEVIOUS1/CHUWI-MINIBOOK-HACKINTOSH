@@ -71,7 +71,7 @@ OS ( Version ) ( Issues )
 - [Linux](https://manjaro.org/)                   ( Manjaro-cinnamon-18.0.4-stable-x86_64 ) ( none )
 
 ## Credits
-Special thanks to my Minibook bro Balopez for all of his assistance
+Special thanks to my Minibook bro Balopez for all of his assistance <br>
 [All users from the GPD Discord]() <br>
 [Fewt's Hackintosh guide](https://fewt.gitbook.io/laptopguide/) <br>
 [CHUWI for making the great Minibook](https://www.chuwi.com/cn/) <br>
