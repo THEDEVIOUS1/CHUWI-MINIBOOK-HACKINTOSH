@@ -63,7 +63,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Internal Wi-Fi ( Intel AC 3165 )
 - Card Reader
 - Emmc
-
+- Accelerometer
 
 ## Other Operating Systems
 
