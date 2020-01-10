@@ -36,6 +36,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 ### Additional drivers
 
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
+
 [Wifi dongle driver(older adapters)](https://github.com/chris1111/Wireless-Ralink-Panel-Utility)
 
 
