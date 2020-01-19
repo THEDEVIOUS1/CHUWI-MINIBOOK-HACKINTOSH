@@ -5,7 +5,10 @@ If you see anything that could be added or changed don't hesitate to make a pull
 
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
 
-## Basic Usage
+*CRITICAL ISSUE WARNING*
+fans only work after a warm boot from either linux or windows...if u dont want to worry about your device over heating then only enter macos after restarting from either of those operating systems until the issue is fixed!!!
+
+##  Basic Usage
 
 1. Create a bootable Mojave or Catalina bootable USB using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/) OR this [tutorial](https://olarila.com/forum/viewtopic.php?f=50&t=8685)(arguably easier but must register) but use my CLOVER folder at the point where you should configure CLOVER bootloader
 2. Boot from this usb then install Mojave/Catalina on a free partition of your drive ( please note...must be installed to ssd as macos does not detect emmc )
@@ -38,7 +41,6 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
 [Wifi dongle driver(older adapters)](https://github.com/chris1111/Wireless-Ralink-Panel-Utility)
-
 
 ## What works
 
