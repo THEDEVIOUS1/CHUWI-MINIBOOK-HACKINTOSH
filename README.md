@@ -5,8 +5,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
 
-*CRITICAL ISSUE WARNING*
-fans only work after a warm boot from either linux or windows...if u dont want to worry about your device over heating then only enter macos after restarting from either of those operating systems until the issue is fixed!!!
+## *CRITICAL ISSUE WARNING*
+## fan only works after a warm boot from either linux or windows...if u dont want to worry about your device over heating then only enter macos after restarting from either of those operating systems until the issue is fixed!!!
 
 ##  Basic Usage
 
