@@ -22,7 +22,7 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>MacBook10,1-XHC</key>
+		<key>MacBookAir8,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
 			<string>com.apple.driver.AppleUSBMergeNub</string>
@@ -36,20 +36,21 @@
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>1500</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>1500</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>1500</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>1500</integer>
 				<key>port-count</key>
 				<data>
 				EAAAAA==
 				</data>
 				<key>ports</key>
 				<dict>
+					<key>CAM1</key>
+					<dict>
+						<key>UsbConnector</key>
+						<integer>255</integer>
+						<key>port</key>
+						<data>
+						AgAAAA==
+						</data>
+					</dict>
 					<key>HS01</key>
 					<dict>
 						<key>UsbConnector</key>
@@ -125,7 +126,7 @@
 				</dict>
 			</dict>
 			<key>model</key>
-			<string>MacBook10,1</string>
+			<string>MacBookAir8,1</string>
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
