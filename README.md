@@ -56,11 +56,11 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works in 10.14.6 /10.15.1 )
 - TrackPoint 
 - HDMI / Type-C
+- TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
 
 
 ## What doesn't work
 
-- TouchScreen / Stylus
 - Fingerprint Sensor
 - Internal Wi-Fi ( Intel AC 3165 )
 - Card Reader
