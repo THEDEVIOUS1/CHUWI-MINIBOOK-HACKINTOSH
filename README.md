@@ -57,7 +57,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - TrackPoint 
 - HDMI / Type-C
 - TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
-- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless...if u want to auto connect to your home internet on boot then u will need to edit the info.plist of the itwlm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
+- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itwlm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
 
 ## What doesn't work
