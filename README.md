@@ -32,8 +32,14 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 
 
 ## Setting resolutions over 1080p
+- Method 1
 1. flash modified bios *warning-possibility of windows serial key being deleted so proceed with caution* (format usb stick to fat 32, copy files inside of folder to root of drive then reboot)
 2. enter bios using f7(fn + 7) then go to chipset -> system agent -> graphics configuration -> dvmt pre-allocated and change to 64mb
+3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
+
+- Method 2
+1. load clover and select shell 
+2. enter the command "setup_var_3 0x894 0x2" (without the quotations) hit enter then type exit
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
 ### Additional drivers
