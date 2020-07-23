@@ -1,12 +1,12 @@
 # CHUWI Minibook Hackintosh
 
-EFI files for hackintosh on the CHUWI Minibook, works on Catalina and Mojave.
+EFI files for hackintosh on the CHUWI Minibook, works on Catalina and Mojave with initial support for Big Sur.
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
 
 ## *CRITICAL ISSUE WARNING*
-## fan only works on low speed unless you do a warm boot from either linux or windows...if u dont want to worry about your device over heating then only enter macos after restarting from either of those operating systems until the problem is fixed!!!
+## The Fan does not work on its own and requires a special SSDT patch to enable the fan. Use of EFI release version 0.0.1 may result in computer overheating and the computer will not shut off on its own in this situation. USE RELEASE VERSION 0.1.0 OR HIGHER, YOU HAVE BEEN WARNED!!
 
 ##  Basic Usage
 
@@ -59,12 +59,21 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - USB
 - Keyboard
 - Camera
-- Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works in 10.14.6 /10.15.1 )
+- Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works)
+- FAN Operates automatically on Cold/Warm boot and after sleep (Must use EFI release version 0.1.0 or higher)
 - TrackPoint 
 - HDMI / Type-C
 - TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
-- Internal Wi-Fi ( use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
+- Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
+## Fixes in progress but not released
+
+- Accelerometer (likely will not have full support but may allow for a triggered rotate when keyboard flipped)
+- Auto shut off of Keyboard when flipped into tablet mode
+- Additional resolutions on internal monitor (may not be possible, so don't get your hopes up yet)
+- Windows boot support from OpenCore
+- Native Brightness Key Activation
+- Native Sleep Button support
 
 ## What doesn't work
 
@@ -72,6 +81,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Card Reader
 - Emmc
 - Accelerometer
+- Additional Resolutions other than default
 
 ## Other Operating Systems
 
