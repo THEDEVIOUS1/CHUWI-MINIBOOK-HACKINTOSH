@@ -38,7 +38,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
 - Method 2
-1. load clover and select shell 
+1. load clover and select "start uefi shell 64" 
 2. enter the command "setup_var_3 0x894 0x2" (without the quotations) hit enter then type exit
 3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
 
@@ -70,7 +70,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - TrackPoint 
 - HDMI / Type-C
 - TouchScreen / Stylus ( double click doesnt work and non-functional on mojave )
-- Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and use the instructions [here](https://support.apple.com/guide/mac-help/open-items-automatically-when-you-log-in-mh15189/mac) to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
+- Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and check "load at login" to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password OR set your router to ssid "ssdt" with security key "zxyssdt112233")
 
 ## Fixes in progress but not released
 
