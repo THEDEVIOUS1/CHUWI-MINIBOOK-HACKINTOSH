@@ -6,7 +6,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
 
 ## *CRITICAL ISSUE WARNING*
-## The Fan does not work on its own and requires a special SSDT patch to enable the fan. Use of EFI release version 0.0.1 may result in computer overheating resulting in damage. USE RELEASE VERSION 0.1.0 OR HIGHER, YOU HAVE BEEN WARNED!!
+## The Fan does not work on its own and requires a special SSDT patch to enable the fan. Use of EFI release version below 0.1.0 may result in computer overheating resulting in damage. USE RELEASE VERSION 0.1.0 OR HIGHER, YOU HAVE BEEN WARNED!!
 
 ##  Basic Usage
 
