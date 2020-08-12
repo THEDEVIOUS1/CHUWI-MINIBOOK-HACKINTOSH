@@ -80,6 +80,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Additional resolutions on internal monitor (may not be possible, so don't get your hopes up yet)
 - Native Brightness Key Activation
 - Native Sleep Button support
+- Filevault Support
 
 ## What doesn't work
 
