@@ -73,7 +73,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - TouchScreen / Stylus (double click doesnt work and non-functional on mojave)
 - Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and check "load at login" to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password)
 
-## Planned Fixes in progress
+## Planned/In Progress Fixes
 
 - Accelerometer (likely will not have full support but may allow for a triggered rotate when keyboard flipped)
 - Auto shut off of Keyboard when flipped into tablet mode
