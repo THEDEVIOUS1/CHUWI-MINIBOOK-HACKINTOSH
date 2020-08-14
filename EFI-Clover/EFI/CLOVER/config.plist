@@ -36,11 +36,11 @@
 			<integer>1</integer>
 			<key>#PLimitDict</key>
 			<integer>1</integer>
-			<key>#UseSystemIO</key>
-			<false/>
 			<key>#NoOemTableId</key>
 			<false/>
 			<key>#NoDynamicExtract</key>
+			<false/>
+			<key>#UseSystemIO</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
@@ -114,6 +114,36 @@
 					<false/>
 					<key>Comment</key>
 					<string>Alt Win10 to Darwin Patch</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1EwNg==</data>
+					<key>Replace</key>
+					<data>WFEwNg==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>_Q06 to XQ06 to enable brightness key</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>X1EwNw==</data>
+					<key>Replace</key>
+					<data>WFEwNw==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>_Q07 to XQ07 to enable brightness key</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>R1BSVwJwaA==</data>
+					<key>Replace</key>
+					<data>WFBSVwJwaA==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>GPRW to XPRW to fix instant wake from sleep</string>
 				</dict>
 			</array>
 			<key>#DropOEM_DSM</key>
@@ -370,16 +400,16 @@
 			<key>Legacy</key>
 			<array>
 				<dict>
-					<key>Title</key>
-					<string>MyLegacyEntry</string>
+					<key>Hotkey</key>
+					<string>L</string>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Hidden</key>
 					<false/>
-					<key>Hotkey</key>
-					<string>L</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Title</key>
+					<string>MyLegacyEntry</string>
 					<key>Volume</key>
 					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
 				</dict>
@@ -1114,6 +1144,19 @@
 		<false/>
 		<key>InjectKexts</key>
 		<string>Yes</string>
+	</dict>
+	<key>Quirks</key>
+	<dict>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
 	</dict>
 	<key>#DisableDrivers</key>
 	<array>
