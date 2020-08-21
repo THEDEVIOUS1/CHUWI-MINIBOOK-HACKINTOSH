@@ -57,9 +57,9 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 ## What works
 
 - Graphic Acceleration
-- Bluetooth
-- Brigthness
-- Audio
+- Bluetooth (Improved Reliability)
+- Brightness
+- Audio (Fixed audio after sleep)
 - Power Management
 - Battery 
 - USB
@@ -81,6 +81,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Native Brightness Key Activation
 - Native Sleep Button support
 - Filevault Support
+- Linux boot from OC
 
 ## What doesn't work
 
