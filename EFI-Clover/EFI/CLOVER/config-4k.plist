@@ -36,11 +36,11 @@
 			<integer>1</integer>
 			<key>#PLimitDict</key>
 			<integer>1</integer>
+			<key>#NoDynamicExtract</key>
+			<false/>
 			<key>#UseSystemIO</key>
 			<false/>
 			<key>#NoOemTableId</key>
-			<false/>
-			<key>#NoDynamicExtract</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
@@ -144,16 +144,6 @@
 					<false/>
 					<key>Comment</key>
 					<string>GPRW to XPRW to fix instant wake from sleep</string>
-				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1FENQ==</data>
-					<key>Replace</key>
-					<data>WFFENQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>_QD5 to XQD6</string>
 				</dict>
 			</array>
 			<key>#DropOEM_DSM</key>
@@ -409,16 +399,16 @@
 			<key>Legacy</key>
 			<array>
 				<dict>
-					<key>Title</key>
-					<string>MyLegacyEntry</string>
+					<key>Disabled</key>
+					<true/>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Title</key>
+					<string>MyLegacyEntry</string>
 					<key>Hotkey</key>
 					<string>L</string>
-					<key>Disabled</key>
-					<true/>
 					<key>Volume</key>
 					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
 				</dict>
@@ -782,12 +772,12 @@
 			<string>0x9221</string>
 			<key>Inject</key>
 			<false/>
-			<key>#VideoInputSignal</key>
-			<string>0xA1</string>
-			<key>#Inject</key>
-			<true/>
 			<key>#VendorID</key>
 			<string>0x1006</string>
+			<key>#Inject</key>
+			<true/>
+			<key>#VideoInputSignal</key>
+			<string>0xA1</string>
 		</dict>
 		<key>#LoadVBios</key>
 		<false/>
@@ -829,33 +819,6 @@
 		<array>
 			<string>\System\Library\Extensions\AMD6000Controller.kext</string>
 			<string>\System\Library\Extensions\AMDFramebuffer.kext</string>
-		</array>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel</string>
-				<key>MatchOS</key>
-				<string>10.14</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>Replace</key>
-				<data>igKEwOtE</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
-				<key>MatchOS</key>
-				<string>10.13</string>
-			</dict>
 		</array>
 		<key>#ATIConnectorsPatch</key>
 		<string>040000001402000000010000000004040004000004030000000100001102010500000000000000000000000000000000</string>

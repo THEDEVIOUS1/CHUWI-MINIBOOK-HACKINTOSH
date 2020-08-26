@@ -10,7 +10,7 @@
 		<dict>
 			<key>#EnableC4</key>
 			<false/>
-			<key>#UseSystemIO</key>
+			<key>#NoDynamicExtract</key>
 			<false/>
 			<key>UseSystemIO</key>
 			<false/>
@@ -26,19 +26,19 @@
 			<integer>12</integer>
 			<key>#C3Latency</key>
 			<string>0x03E7</string>
-			<key>#EnableC6</key>
+			<key>#DropOem</key>
 			<true/>
 			<key>#MinMultiplier</key>
 			<integer>8</integer>
-			<key>#DropOem</key>
+			<key>#EnableC6</key>
 			<true/>
 			<key>#UnderVoltStep</key>
 			<integer>1</integer>
 			<key>#PLimitDict</key>
 			<integer>1</integer>
-			<key>#NoOemTableId</key>
+			<key>#UseSystemIO</key>
 			<false/>
-			<key>#NoDynamicExtract</key>
+			<key>#NoOemTableId</key>
 			<false/>
 			<key>#EnableC7</key>
 			<false/>
@@ -145,27 +145,17 @@
 					<key>Comment</key>
 					<string>GPRW to XPRW to fix instant wake from sleep</string>
 				</dict>
-				<dict>
-					<key>Find</key>
-					<data>X1FENQ==</data>
-					<key>Replace</key>
-					<data>WFFENQ==</data>
-					<key>Disabled</key>
-					<false/>
-					<key>Comment</key>
-					<string>_QD5 to XQD6</string>
-				</dict>
 			</array>
 			<key>#DropOEM_DSM</key>
 			<dict>
 				<key>USB</key>
 				<true/>
-				<key>HDMI</key>
-				<true/>
-				<key>ATI</key>
-				<true/>
 				<key>SmBUS</key>
 				<false/>
+				<key>ATI</key>
+				<true/>
+				<key>HDMI</key>
+				<true/>
 				<key>LAN</key>
 				<true/>
 				<key>IntelGFX</key>
@@ -383,10 +373,10 @@
 					<string>OSXRecovery</string>
 				</dict>
 				<dict>
-					<key>Volume</key>
-					<string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Volume</key>
+					<string>454794AC-760D-46E8-8F77-D6EB23D2FD32</string>
 					<key>Type</key>
 					<string>OSX</string>
 					<key>SubEntries</key>
@@ -415,23 +405,23 @@
 					<string>Windows</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Title</key>
+					<string>MyLegacyEntry</string>
 					<key>Hotkey</key>
 					<string>L</string>
 					<key>Disabled</key>
 					<true/>
-					<key>Title</key>
-					<string>MyLegacyEntry</string>
 				</dict>
 			</array>
 			<key>Tool</key>
 			<array>
 				<dict>
-					<key>Volume</key>
-					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Hotkey</key>
 					<string>S</string>
+					<key>Volume</key>
+					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Arguments</key>
@@ -502,6 +492,21 @@
 				<key>device_type</key>
 				<string>Airport</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>sAQ=</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>6AM=</data>
+				<key>AAPL,current-extra</key>
+				<data>vAI=</data>
+				<key>AAPL,clock-id</key>
+				<data>AQ==</data>
+				<key>built-in</key>
+				<data>AA==</data>
+				<key>device_type</key>
+				<string>EHCI</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,current-in-sleep</key>
@@ -518,21 +523,6 @@
 				<string>XHCI</string>
 				<key>AAPL,current-available</key>
 				<data>sAQ=</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
-			<dict>
-				<key>AAPL,current-available</key>
-				<data>sAQ=</data>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AM=</data>
-				<key>AAPL,current-extra</key>
-				<data>vAI=</data>
-				<key>AAPL,clock-id</key>
-				<data>AQ==</data>
-				<key>built-in</key>
-				<data>AA==</data>
-				<key>device_type</key>
-				<string>EHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x19,0x0)</key>
 			<dict>
@@ -616,51 +606,51 @@
 		<false/>
 		<key>LANInjection</key>
 		<false/>
-		<key>#DisableFunctions</key>
-		<string>0x18F6</string>
 		<key>#AddProperties</key>
 		<array>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AQAAAA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-patch-enable</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AAAwAQ==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-stolenmem</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AACQAA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-fbmem</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 			<dict>
-				<key>Disabled</key>
-				<true/>
 				<key>Value</key>
 				<data>AAAAgA==</data>
+				<key>Disabled</key>
+				<true/>
 				<key>Key</key>
 				<string>framebuffer-unifiedmem</string>
 				<key>Device</key>
 				<string>IntelGFX</string>
 			</dict>
 		</array>
+		<key>#DisableFunctions</key>
+		<string>0x18F6</string>
 		<key>Audio</key>
 		<dict>
 			<key>#Inject</key>
@@ -782,12 +772,12 @@
 			<string>0x11</string>
 			<key>#ProductID</key>
 			<string>0x9221</string>
-			<key>#VideoInputSignal</key>
-			<string>0xA1</string>
 			<key>Inject</key>
 			<false/>
 			<key>#VendorID</key>
 			<string>0x1006</string>
+			<key>#VideoInputSignal</key>
+			<string>0xA1</string>
 			<key>#Inject</key>
 			<true/>
 		</dict>
@@ -831,33 +821,6 @@
 		<array>
 			<string>\System\Library\Extensions\AMD6000Controller.kext</string>
 			<string>\System\Library\Extensions\AMDFramebuffer.kext</string>
-		</array>
-		<key>KernelToPatch</key>
-		<array>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 Release kernel</string>
-				<key>MatchOS</key>
-				<string>10.14</string>
-			</dict>
-			<dict>
-				<key>Find</key>
-				<data>igKEwHRE</data>
-				<key>Replace</key>
-				<data>igKEwOtE</data>
-				<key>Disabled</key>
-				<true/>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.13 Release kernel</string>
-				<key>MatchOS</key>
-				<string>10.13</string>
-			</dict>
 		</array>
 		<key>#ATIConnectorsPatch</key>
 		<string>040000001402000000010000000004040004000004030000000100001102010500000000000000000000000000000000</string>
@@ -1042,10 +1005,10 @@
 				<dict>
 					<key>Serial</key>
 					<string>00001001</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
 					<key>Part</key>
 					<string>C0001403</string>
+					<key>Vendor</key>
+					<string>Kingston</string>
 					<key>Size</key>
 					<integer>4096</integer>
 					<key>Frequency</key>
@@ -1058,10 +1021,10 @@
 				<dict>
 					<key>Serial</key>
 					<string>00001002</string>
-					<key>Vendor</key>
-					<string>Kingston</string>
 					<key>Part</key>
 					<string>C0001404</string>
+					<key>Vendor</key>
+					<string>Kingston</string>
 					<key>Size</key>
 					<integer>4096</integer>
 					<key>Frequency</key>
