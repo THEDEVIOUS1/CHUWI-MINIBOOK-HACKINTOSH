@@ -115,6 +115,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Native Brightness Key Activation
 - Native Sleep Button support
 - Touch Screen support in Big Sur
+- Secure Boot (Coming soon thanks to the OpenCore team)
 
 ## What doesn't work
 
