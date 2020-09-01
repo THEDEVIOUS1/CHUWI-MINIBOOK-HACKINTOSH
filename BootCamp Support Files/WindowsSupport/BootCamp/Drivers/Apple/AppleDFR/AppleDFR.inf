@@ -1,0 +1,72 @@
+; Installation inf for the Apple Touch Bar Driver
+;
+; Copyright © 2006 Apple Inc. All Rights Reserved.
+;
+ 
+[Version]
+Signature="$WINDOWS NT$"
+Class=HIDClass
+ClassGuid={745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+Provider=%APPLE%
+CatalogFile=AppleDFR.cat
+DriverVer = 06/21/2018,6.1.7000.0
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+AppleDFR.sys  = 1,,
+hidkmdf.sys = 1
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%APPLE%=APPLE,NTamd64
+
+[APPLE.NTamd64]
+%AppleDFR.DeviceDesc%=AppleDFR_Device, USB\VID_05AC&PID_8302
+
+[AppleDFR_Device.NT]
+CopyFiles=Drivers_Dir
+
+[AppleDFR_Device.NT.HW]
+AddReg = AppleDFR_Device.AddReg 
+
+[AppleDFR_Device.AddReg]
+HKR,,"LowerFilters",0x00010000,"AppleDFR"
+
+[Drivers_Dir]
+AppleDFR.sys
+
+;-------------- Service installation
+[AppleDFR_Device.NT.Services]
+Include=Input.inf
+Needs=HID_Inst.NT.Services
+AddService = AppleDFR,, AppleDFR_Service_Inst
+
+; -------------- AppleDFR driver install sections
+[AppleDFR_Service_Inst]
+DisplayName    = %AppleDFR.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\AppleDFR.sys
+LoadOrderGroup = Extended Base
+
+[AppleDFR_Device.NT.Wdf]
+KmdfService =  AppleDFR, AppleDFR_wdfsect
+
+[AppleDFR_wdfsect]
+KmdfLibraryVersion = 1.15
+
+[Strings]
+APPLE = "Apple Inc."
+ClassName="AppleDFR"
+DiskName = "Apple Touch Bar Installation Disk"
+AppleDFR.DeviceDesc = "Apple Touch Bar"
+AppleDFR.SVCDESC = "Apple Touch Bar Service"

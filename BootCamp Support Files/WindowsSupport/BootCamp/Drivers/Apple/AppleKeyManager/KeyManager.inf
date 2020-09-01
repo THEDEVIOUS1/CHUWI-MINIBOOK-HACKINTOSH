@@ -1,0 +1,66 @@
+;
+; KeyManager.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ProviderName%
+CatalogFile=KeyManager.cat
+DriverVer = 06/20/2018,6.1.7001.0
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+KeyManager.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%APPLE%=APPLE,NTamd64
+
+[APPLE.NTamd64]
+%KeyManager.DeviceDesc%=KeyManager_Device, Root\KeyManager
+
+[KeyManager_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+KeyManager.sys
+
+;-------------- Service installation
+[KeyManager_Device.NT.Services]
+AddService = KeyManager,%SPSVCINST_ASSOCSERVICE%, KeyManager_Service_Inst
+
+; -------------- KeyManager driver install sections
+[KeyManager_Service_Inst]
+DisplayName    = %KeyManager.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\KeyManager.sys
+
+[DeviceInstall32]
+AddDevice = ROOT\KeyManager\1987,,KeyManager_Inst
+
+[KeyManager_Inst]
+HardwareIds = ROOT\KeyManager
+
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ProviderName = "Apple Inc."
+APPLE = "Apple Inc."
+ClassName="KeyManager" 
+DiskName = "KeyManager Installation Disk"
+KeyManager.DeviceDesc = "KeyManager Device"
+KeyManager.SVCDESC = "KeyManager Service"

@@ -1,0 +1,68 @@
+;
+; MacHalDriver.inf
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider=%ProviderName%
+CatalogFile=MacHalDriver.cat
+DriverVer = 06/08/2018,6.1.7000.0
+
+; ================= Class section =====================
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+[SourceDisksNames]
+1 = %DiskName%,,,""
+
+[SourceDisksFiles]
+MacHalDriver.sys  = 1,,
+
+;*****************************************
+; Install Section
+;*****************************************
+
+[Manufacturer]
+%APPLE%=APPLE,NTamd64
+
+[APPLE.NTamd64]
+%MacHalDriver.DeviceDesc%=MacHalDriver_Device, Root\MacHalDriver 
+
+[MacHalDriver_Device.NT]
+CopyFiles=Drivers_Dir
+
+[Drivers_Dir]
+MacHalDriver.sys
+
+;-------------- Service installation
+[MacHalDriver_Device.NT.Services]
+AddService = MacHalDriver,%SPSVCINST_ASSOCSERVICE%, MacHalDriver_Service_Inst
+
+; -------------- MacHalDriver driver install sections
+[MacHalDriver_Service_Inst]
+DisplayName    = %MacHalDriver.SVCDESC%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\MacHalDriver.sys
+LoadOrderGroup = Base
+
+
+[DeviceInstall32]
+AddDevice = ROOT\MacHalDriver\1000,,MacHalDriver_Inst
+
+[MacHalDriver_Inst]
+HardwareIds = ROOT\MacHalDriver
+
+
+[Strings]
+SPSVCINST_ASSOCSERVICE= 0x00000002
+ProviderName = "Apple Inc."
+APPLE = "Apple Inc."
+ClassName="MacHalDriver" 
+DiskName = "MacHalDriver Installation Disk"
+MacHalDriver.DeviceDesc = "MacHalDriver Device"
+MacHalDriver.SVCDESC = "MacHalDriver Service"

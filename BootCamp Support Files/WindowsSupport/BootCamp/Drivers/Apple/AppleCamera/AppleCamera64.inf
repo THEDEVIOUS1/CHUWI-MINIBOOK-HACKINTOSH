@@ -1,0 +1,125 @@
+; Installation inf for the Apple Camera Driver
+;
+; Copyright © 2006-2015 Apple Inc. All Rights Reserved.
+;
+
+[Version]
+Signature="$Windows NT$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+Provider=%OrganizationName%
+CatalogFile=AppleCamera64.cat
+DriverVer=09/30/2016,6.1.6500.0
+
+[SourceDisksNames]
+1000 = %cdname%,,,
+
+[SourceDisksFiles]
+AppleCamera.sys = 1000
+
+[ControlFlags]
+; All PnP devices should be excluded from manual AddDevice Applet list
+ExcludeFromSelect=*
+
+[Manufacturer]
+%GenericMfg%=Apple,NTamd64
+
+[DestinationDirs]
+DCam.CopyDrivers=12
+
+[Apple.NTamd64]
+; Remember, these are compat IDs, which will never match on clean install
+%AppleDigitalCamera.DeviceDesc%=AppleCamera,PCI\VEN_14E4&DEV_1570
+
+[AppleCamera.NT]
+Include=ks.inf,kscaptur.inf
+Needs=KS.Registration,Stream.Registration,KSCAPTUR.Registration.NT
+AddReg=AppleCamera.AddReg,DCam.WIA.AddReg,DCam.AddReg
+CopyFiles=DCam.CopyDrivers
+
+; WIA
+SubClass=     StillImage
+DeviceType=   3
+DeviceSubType=0x1
+Capabilities= 0x00000031
+DeviceData=   DCam.DeviceData
+ICMProfiles=  "sRGB Color Space Profile.icm"
+
+[AppleCamera.NT.HW]
+Include=machine.inf
+Needs=PciASPMOptOut.NT.HW, PciD3ColdSupported.NT.HW
+AddReg=AppleCamera.NT.HW.AddReg
+
+[AppleCamera.NT.HW.AddReg]
+HKR,"Interrupt Management",,0x00000010
+HKR,"Interrupt Management\MessageSignaledInterruptProperties",,0x00000010
+HKR,"Interrupt Management\MessageSignaledInterruptProperties",MSISupported,0x00010001,1
+
+[AppleCamera.AddReg]
+HKR,,SkippedFrames,0x00010001,0
+
+[AppleCamera.NT.Interfaces]
+AddInterface=%KSCATEGORY_CAPTURE%,GLOBAL,AppleCamera.Interface
+AddInterface=%KSCATEGORY_VIDEO%,GLOBAL,AppleCamera.Interface
+
+[AppleCamera.Interface]
+AddReg=AppleCamera.Intf.AddReg
+
+[AppleCamera.Intf.AddReg]
+HKR,,CLSID,,%ProxyVCap.CLSID%
+HKR,,FriendlyName,,%AppleDigitalCamera.FriendlyName%    
+HKR,,Description,,%AppleDigitalCamera.DeviceDesc%
+
+[AppleCamera.NT.Services]
+AddService = AppleCamera,0x00000002,AppleCamera.ServiceInstall
+
+[AppleCamera.ServiceInstall]
+DisplayName   = %AppleDigitalCamera.DeviceDesc%
+ServiceType   = %SERVICE_KERNEL_DRIVER%
+StartType     = %SERVICE_DEMAND_START%
+ErrorControl  = %SERVICE_ERROR_NORMAL%
+ServiceBinary = %12%\AppleCamera.sys
+
+[DCam.AddReg]
+HKR,,OkToHibernate,3,01
+HKR,,DontSuspendIfStreamsAreRunning,3,01
+
+[DCam.WIA.AddReg]
+HKR,,HardwareConfig,1,1
+HKR,,USDClass,,"{0527d1d0-88c2-11d2-82c7-00c04f8ec183}"
+
+[DCam.DeviceData]
+Server=local
+UI Class ID={5d8ef5a3-ac13-11d2-a093-00c04f72dc3c}
+
+[DCam.CopyDrivers]
+AppleCamera.sys
+
+[Strings]
+
+;----------------
+; Non-Localizable
+;----------------
+
+ProxyVCap.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_VIDEO="{6994AD05-93EF-11D0-A3CC-00A0C9223196}"
+SERVICE_KERNEL_DRIVER=1
+SERVICE_DEMAND_START=3
+SERVICE_ERROR_NORMAL=1
+
+BOOTCAMP_KEY = "SOFTWARE\Apple Inc.\Boot Camp\Versions"
+
+; Do not localize FriendlyName; applications may depend on this.
+AppleDigitalCamera.FriendlyName="FaceTime HD Camera"
+
+;----------------
+; Localizable
+;----------------
+
+OrganizationName="Apple Inc."
+
+GenericMfg="Apple Inc."
+AppleDigitalCamera.DeviceDesc="FaceTime HD Camera"
+
+cdname="Disk 1"

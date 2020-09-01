@@ -1,0 +1,2270 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type='text/xml' href='test.xsl'?>
+<!--Information on Boot Camp build-->
+<BuildInfo BuildNumber="7242" ProductName="Boot Camp">
+	<MsiInfo>
+		<ProductManufacturer>Apple Inc.</ProductManufacturer>
+		<ProductVersion>6.1.7242</ProductVersion>
+		<ProductCode>{FCFFE6B6-BAE8-490E-88D0-097A9DA1C43D}</ProductCode>
+		<Component Name="AppleOSSMgr.exe" GUID="*" SharedDLL="yes">
+			<File Name="AppleOSSMgr.exe">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6900.0</FileVersion>
+			</File>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>Build Version</Name>
+				<Type>string</Type>
+				<Value>[BUILDVERSION]</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>VersionNT</Name>
+				<Type>string</Type>
+				<Value>[VersionNT]</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>ModelID</Name>
+				<Type>string</Type>
+				<Value>[SYSTEMMODELNAME]</Value>
+			</Registry>
+		</Component>
+		<Component Name="AppleControlPanel.exe" GUID="*" SharedDLL="yes">
+			<File Name="AppleControlPanel.exe">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.7000.3</FileVersion>
+			</File>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\explorer\ControlPanel\NameSpace\{4d0f8110-1de4-11dc-8314-0800200c9a66}</Key>
+				<Name>null</Name>
+				<Type>string</Type>
+				<Value>Apple Control Panel</Value>
+			</Registry>
+			<Registry>
+				<Key>HKCR\CLSID\{4d0f8110-1de4-11dc-8314-0800200c9a66}</Key>
+				<Name>null</Name>
+				<Type>string</Type>
+				<Value>Boot Camp</Value>
+			</Registry>
+			<Registry>
+				<Key>HKCR\CLSID\{4d0f8110-1de4-11dc-8314-0800200c9a66}</Key>
+				<Name>{305CA226-D286-468e-B848-2B2E8E697B74} 2</Name>
+				<Type>integer</Type>
+				<Value>5</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</Key>
+				<Name>Brightness</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\Extended Properties\{305CA226-D286-468e-B848-2B2E8E697B74} 2</Key>
+				<Name>%SystemRoot%\system32\Startup Disk.cpl</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\explorer\ControlPanel\NameSpace\{4BCC27C9-EB40-48cd-A331-521888CCE354}</Key>
+				<Name>null</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+			<Registry>
+				<Key>HKCR\CLSID\{4BCC27C9-EB40-48cd-A331-521888CCE354}</Key>
+				<Name>null</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+		</Component>
+		<Component Name="EnableS3Registry" GUID="983D6862-F468-48ce-871D-EB221D1A8469" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SYSTEM\CurrentControlSet\Services\usb</Key>
+				<Name>null</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+		</Component>
+		<Component Name="WriteiMacKey" GUID="53031B5C-FD64-4A5F-97F5-9FBFF82B6F63" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>iMac131Parameter</Name>
+				<Type>integer</Type>
+				<Value>2304</Value>
+			</Registry>
+		</Component>
+		<Component Name="WriteOverrideKey" GUID="E61D147E-5869-4A04-BD69-A4092822187E" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>OverrideMaxCDClkLogic</Name>
+				<Type>integer</Type>
+				<Value>1</Value>
+			</Registry>
+		</Component>
+		<Component Name="WriteBTWakeKey" GUID="24ED24C9-7642-4532-8BBD-55C04DACBB38" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SYSTEM\CurrentControlSet\Enum\BCMBTBUS\BLUETOOTH\5&amp;1c9f92e2&amp;0&amp;4097\Device Parameters</Key>
+				<Name>RemoteWakeEnabled</Name>
+				<Type>integer</Type>
+				<Value>1</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SYSTEM\CurrentControlSet\Enum\BCMBTBUS\BLUETOOTH\5&amp;1c9f92e2&amp;0&amp;4097\Device Parameters</Key>
+				<Name>SelectiveSuspendEnabled</Name>
+				<Type>integer</Type>
+				<Value>0</Value>
+			</Registry>
+		</Component>
+		<Component Name="EnableDriverSearch" GUID="67D2BDC8-4A92-42D0-AE2C-078E2EB40242" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching</Key>
+				<Name>SearchOrderConfig</Name>
+				<Type>integer</Type>
+				<Value>1</Value>
+			</Registry>
+		</Component>
+		<Component Name="Bootcamp.exe" GUID="*" SharedDLL="No">
+			<File Name="Bootcamp.exe">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.7000.0</FileVersion>
+			</File>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</Key>
+				<Name>Apple_KbdMgr</Name>
+				<Type>string</Type>
+				<Value>[#Bootcamp.exe]</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce</Key>
+				<Name>Set_Hibernation</Name>
+				<Type>string</Type>
+				<Value>[System64Folder]powercfg.exe /hibernate on</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Apple Inc.\Boot Camp</Key>
+				<Name>Old Preload</Name>
+				<Type>string</Type>
+				<Value>[OLD_KBD_PRELOAD]</Value>
+			</Registry>
+			<Registry>
+				<Key>HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{C4DC9AAA-64A3-4429-9C37-55D2F6CD7528}</Key>
+				<Name>null</Name>
+				<Type>null</Type>
+				<Value>null</Value>
+			</Registry>
+		</Component>
+		<Component Name="UTCTime" GUID="*" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\SYSTEM\CurrentControlSet\Control\TimeZoneInformation</Key>
+				<Name>RealTimeIsUniversal</Name>
+				<Type>integer</Type>
+				<Value>1</Value>
+			</Registry>
+		</Component>
+		<Component Name="SetIntelKey" GUID="*" SharedDLL="No">
+			<Registry>
+				<Key>HKLM\Software\Intel\GFX\Internal\AudioFix</Key>
+				<Name>AudioSwitchUpgrade</Name>
+				<Type>integer</Type>
+				<Value>1</Value>
+			</Registry>
+		</Component>
+		<Component Name="BootCamp.Resources_da.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_de.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_en.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_es.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_fi.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_fr.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_it.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_ja.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_ko.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_nb.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_nl.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_pl.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_pt_PT.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_pt.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_ru.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_sv.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_zh_CN.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_zh_TW.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_ar.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_cs.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_tr.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCamp.Resources_hu.lproj_Resources.dll" GUID="*" SharedDLL="No">
+			<File Name="Resources.dll">
+				<KeyPath>yes</KeyPath>
+				<FileVersion>6.1.6500.0</FileVersion>
+			</File>
+		</Component>
+		<Component Name="BootCampInstallerCache" GUID="1012A1C4-8CAF-44bd-8743-2B667E7632A0" SharedDLL="No">
+		</Component></MsiInfo>
+	<InfInfo>
+		<Apple>
+			<Name>Apple USB Ethernet Adapter
+				<InfName>AppleUSBEthernet.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> AppleUSBEthernetex.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 02/01/2008, 3.8.3.10</DriverVer>
+				<ServiceBinary>AppleUSBEthernet.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Apple USB Ethernet Adapter
+				<InfName>AppleUSBEthernet.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> AppleUSBEthernetex.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 02/01/2008, 3.10.3.10</DriverVer>
+				<ServiceBinary>AppleUSBEthernet.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Audio Device
+				<InfName>AppleAudio.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>AppleAudio.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 10/16/2018,6.1.7200.0</DriverVer>
+				<ServiceBinary>AppleAudio.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1803106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1803106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 08/07/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1880106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1880106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 08/07/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1881106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1881106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 08/07/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1882106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1882106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 09/26/2018,6.1.7200.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1884106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1884106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 09/13/2018,6.1.7100.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple  Extension Driver
+				<InfName>AppleAudio_1886106B.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> AppleAudio_1886106B.cat</CatalogFile>
+				<Provider>Apple</Provider>
+				<DriverVer> 10/19/2018,6.1.7200.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Broadcom Built-in Bluetooth
+				<InfName>AppleBTBC.inf</InfName>
+				<Class>Bluetooth</Class>
+				<ClassGUID>{e0cbf06c-cd8b-4647-bb8a-263b43f0f974}</ClassGUID>
+				<CatalogFile>AppleBTBC.CAT</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 07/23/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>AppleBtBc.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>FaceTime HD Camera
+				<InfName>AppleCamera64.inf</InfName>
+				<Class>Image</Class>
+				<ClassGUID>{6bdd1fc6-810f-11d0-bec7-08002be2092f}</ClassGUID>
+				<CatalogFile>AppleCamera64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer>09/30/2016,6.1.6500.0</DriverVer>
+				<ServiceBinary>AppleCamera.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Touch Bar Service
+				<InfName>AppleDFR.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>AppleDFR.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/21/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>AppleDFR.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Display Driver
+				<InfName>aaplmonf.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>aaplmonf.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer>01/23/2009,3.0.0.0</DriverVer>
+				<ServiceBinary>aaplmonf.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Apple Display Driver
+				<InfName>AppleDisplay.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>aaplmonf.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 07/23/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>aaplmonf.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Display Driver
+				<InfName>aaplmonf64.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>aaplmonf64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer>01/23/2009, 3.0.0.0</DriverVer>
+				<ServiceBinary>aaplmonf.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>MacHalDriver Service
+				<InfName>MacHALDriver.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>MacHalDriver.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/08/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>MacHalDriver.sys</ServiceBinary>
+				<HardwareID> ROOT\MacHalDriver</HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>USB Keyboard HID Filter
+				<InfName>Keymagic64.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>KeyMagic64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 06/28/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>KeyMagic.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>USB Keyboard HID Filter
+				<InfName>AppleKeyboardInternalUSB.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>AppleKeyboardInternalUSB.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 09/28/2018,6.1.7100.0</DriverVer>
+				<ServiceBinary>AppleKeyboardInternalUSB.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>USB Keyboard HID Filter
+				<InfName>Keymagic2.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>KeyMagic2.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 09/28/2018,6.1.7100.0</DriverVer>
+				<ServiceBinary>KeyMagic2.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>KeyManager Service
+				<InfName>KeyManager.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>KeyManager.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/20/2018,6.1.7001.0</DriverVer>
+				<ServiceBinary>KeyManager.sys</ServiceBinary>
+				<HardwareID> ROOT\KeyManager</HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Multi-Touch
+				<InfName>AppleMTP64.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>applemtp64.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/17/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>applemtp.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple HID Filter
+				<InfName>AppleTPP64.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>appletpp64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer> 06/21/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>appletpp.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Null Driver
+				<InfName>AppleNull64.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>AppleNull64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer>08/24/2018,6.1.7200.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple ODD
+				<InfName>AppleODD.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>AppleODD.cat</CatalogFile>
+				<Provider> "Apple Inc." </Provider>
+				<DriverVer> 07/23/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>AppleODD.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>AppleSOC Service
+				<InfName>AppleSOC.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>AppleSOC.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer>11/04/2016,6.1.6500.0</DriverVer>
+				<ServiceBinary>AppleSOC.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>AppleSPIDevice Service
+				<InfName>AppleSPIDevice.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>AppleSPIDevice.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer>05/26/2016,6.1.6500.0</DriverVer>
+				<ServiceBinary>AppleSPIDevice.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>AppleSPIKeyboard Service
+				<InfName>AppleSPIKeyboard.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>AppleSPIKeyboard.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer>10/19/2016,6.1.6700.0</DriverVer>
+				<ServiceBinary>AppleSPIKeyboard.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>AppleSPITrackpad Service
+				<InfName>AppleSPITrackpad.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>AppleSPITrackpad.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer>10/19/2016,6.1.6700.0</DriverVer>
+				<ServiceBinary>AppleSPITrackpad.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name> "Apple Inc." Usb Driver
+				<InfName>AppleUSBCompositeDevice.inf</InfName>
+				<Class>Usb</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>AppleUSBCompositeDevice.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer>05/18/2016,6.1.6500.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple USB Virtual Host Controller
+				<InfName>AppleUSBVHCI.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>AppleUSBVHCI.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 08/24/2018,6.1.7001.0</DriverVer>
+				<ServiceBinary>AppleUSBVHCI.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Wireless Mouse
+				<InfName>AppleWirelessMouse.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>applewirelessmouse.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/21/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>applewirelessmouse.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Apple Wireless Trackpad
+				<InfName>AppleWirelessTrackpad.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>applewtp.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 06/21/2018,6.1.7000.0</DriverVer>
+				<ServiceBinary>applewtp.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>System Device
+				<InfName>NullSystemDevice64.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>NullSystemDevice64.cat</CatalogFile>
+				<Provider>"Apple Inc."</Provider>
+				<DriverVer>01/27/2014,5.1.2.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+	<Name>Apple Solid State Drive Device
+				<InfName>AppleSSD.inf</InfName>
+				<Class>SCSIAdapter</Class>
+				<ClassGUID>{4D36E97B-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> AppleSSD.cat</CatalogFile>
+				<Provider> "Apple Inc."</Provider>
+				<DriverVer> 10/17/2018,6.1.7200.1</DriverVer>
+				<ServiceBinary>AppleSSD.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+				</Name>
+			</Apple>
+		<ThirdParty>
+			<Name>AQtion Network Adapter Driver
+				<InfName>aqnic650.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> aqnic650.cat</CatalogFile>
+				<Provider>Aquantia</Provider>
+				<DriverVer> 07/04/2018,2.1.008.0</DriverVer>
+				<ServiceBinary>aqnic650.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>CS420xLowerFilter
+				<InfName>cs420x_46.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>CS420x64.cat</CatalogFile>
+				<Provider>"Cirrus Logic, Inc."</Provider>
+				<DriverVer>02/14/2014, 6.6001.1.41</DriverVer>
+				<ServiceBinary>CS420x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>CS42xxUpperFilter
+				<InfName>cs4208_38.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>CS420x64.cat</CatalogFile>
+				<Provider>"Cirrus Logic, Inc."</Provider>
+				<DriverVer>02/09/2017,6.6001.3.38</DriverVer>
+				<ServiceBinary>CSUFD.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Dolby DAX API Service
+				<InfName>dax3_swc_aposvc.inf</InfName>
+				<Class> SoftwareComponent</Class>
+				<ClassGUID> {5c4c3332-344d-483c-8739-259e934c9cc8}</ClassGUID>
+				<CatalogFile> dax3_swc_aposvc.cat</CatalogFile>
+				<Provider>Dolby</Provider>
+				<DriverVer> 07/27/2018,3.20200.247.0</DriverVer>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Dolby  SoftwareComponent Driver
+				<InfName>dax3_swc_hsa.inf</InfName>
+				<Class> SoftwareComponent</Class>
+				<ClassGUID> {5c4c3332-344d-483c-8739-259e934c9cc8}</ClassGUID>
+				<CatalogFile> dax3_swc_hsa.cat</CatalogFile>
+				<Provider>Dolby</Provider>
+				<DriverVer> 07/27/2018,3.20200.247.0</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Controller
+				<InfName>tbt70i.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>tbt70i.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/18/2016,16.1.47.2</DriverVer>
+				<ServiceBinary>tbt70i.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Controller
+				<InfName>tbt70x.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>tbt70x.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/18/2016,16.1.47.2</DriverVer>
+				<ServiceBinary>tbt70x.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Controller
+				<InfName>tbt81x.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>tbt81x.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/18/2016,16.1.47.2</DriverVer>
+				<ServiceBinary>tbt81x.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Networking
+				<InfName>tp2p70i.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4D36E972-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> tp2p70i.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/10/2016,16.1.47.1</DriverVer>
+				<ServiceBinary>tp2p70i.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Networking
+				<InfName>tp2p70x.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4D36E972-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> tp2p70x.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/10/2016,16.1.47.1</DriverVer>
+				<ServiceBinary>tp2p70x.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Thunderbolt(TM) Networking
+				<InfName>tp2p81x.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4D36E972-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> tp2p81x.cat</CatalogFile>
+				<Provider>SOFTWARE\Microsoft\Windows\CurrentVersion\WINEVT\Publishers</Provider>
+				<DriverVer>04/10/2016,16.1.47.1</DriverVer>
+				<ServiceBinary>tp2p81x.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>AMD Audio Bus Lower Filter
+				<InfName>amdkmafd.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>amdkmafd.cat</CatalogFile>
+				<Provider>AMD</Provider>
+				<DriverVer>09/22/2012, 9.002.0.0000</DriverVer>
+				<ServiceBinary>amdkmafd.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>btwampfl
+				<InfName>BtwSerialBus-dev.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> btwserialbus-devx64.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer> 05/24/2018,12.0.1.874</DriverVer>
+				<ServiceBinary>btwampfl.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Broadcom HIDClass Driver
+				<InfName>UheBtHid.inf</InfName>
+				<Class>HIDClass</Class>
+				<ClassGUID>{745a17a0-74d3-11d0-b6fe-00a0c90f57da}</ClassGUID>
+				<CatalogFile>uhebthid-x64.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>12/11/2015,12.0.1.870</DriverVer>
+				<ServiceBinary>uhebthid.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Broadcom UHE Serial Bus Driver
+				<InfName>UheSerialBus.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>UheSerialBus-x64.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>12/11/2015,12.0.1.870</DriverVer>
+				<ServiceBinary>UheSerialBus.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Broadcom 802.11ac PCIE Network Adapter Driver
+				<InfName>bcmwdidhdpcie.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> bcmpciedhd63.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>09/25/2018, 100.10.330.6</DriverVer>
+				<ServiceBinary>bcmpciedhd63.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Broadcom 802.11 SDIO Network Adapter Driver
+				<InfName>bcmwl6.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>BCM43XX64.CAT</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>10/28/2017, 7.35.118.78</DriverVer>
+				<ServiceBinary>bcmwlhighsd5.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Broadcom 802.11 SDIO Network Adapter Driver
+				<InfName>bcmwl63.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>BCM43XX64.CAT</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>10/28/2017, 7.35.118.78</DriverVer>
+				<ServiceBinary>bcmwlhighsd5.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Broadcom 802.11 Network Adapter Driver
+				<InfName>bcmwl6.inf</InfName>
+				<Class>Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>BCM43XX64.CAT</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer>11/13/2012, 5.106.199.1</DriverVer>
+				<ServiceBinary>bcmwl5.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>ApolloLakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>ApolloLake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.17.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>AvotonSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Avoton.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>AvotonUSB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>Avoton.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>Baytrail-ISystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Baytrail-I.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>BraswellSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Braswell.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>BroadwellSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Broadwell.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>Broadwell-DESystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Broadwell-DE.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL SDHost Driver
+				<InfName>CannonLake-HSDHost.inf</InfName>
+				<Class>SDHost</Class>
+				<ClassGUID>{A0A588A4-C46F-4B37-B7EA-C82FE89870C6}</ClassGUID>
+				<CatalogFile>CannonLake-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.16.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-HSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.16.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-HSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.16.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-HSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.16.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-HSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.16.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL SDHost Driver
+				<InfName>CannonLake-LPSDHost.inf</InfName>
+				<Class>SDHost</Class>
+				<ClassGUID>{A0A588A4-C46F-4B37-B7EA-C82FE89870C6}</ClassGUID>
+				<CatalogFile>CannonLake-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.15.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-LPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.15.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-LPSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.15.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-LPSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.15.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CannonLake-LPSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CannonLake-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.15.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CedarForkSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CedarFork.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.21.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CoffeelakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Coffeelake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.14.4</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>ColetoCreekSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>ColetoCreek.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CommonSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Common.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CougarPointSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>CougarPoint.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>CougarPointUSB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>CougarPoint.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>CrystalwellSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Crystalwell.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL Ports Driver
+				<InfName>DenvertonPorts.inf</InfName>
+				<Class>Ports</Class>
+				<ClassGUID>{4D36E978-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Denverton.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.19.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>DenvertonSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Denverton.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.19.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>FPGASystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>FPGA.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.18.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>GeminilakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Geminilake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.13.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>GeminilakeSystemGMM.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Geminilake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.13.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>GeminilakeSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Geminilake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.13.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>GeminilakeSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Geminilake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.13.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>HaswellSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Haswell.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>HaswellESystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>HaswellE.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.20.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USBFunctionController Driver
+				<InfName>IceLakeUSBFunctionController.inf</InfName>
+				<Class>USBFunctionController</Class>
+				<ClassGUID>{BBBE8734-08FA-4966-B6A6-4E5AD010CDD7}</ClassGUID>
+				<CatalogFile>IceLake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.20.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-HSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.23.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-LPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.12.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-LPSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.12.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-LPSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.12.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-LPSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.12.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IceLakePCH-NSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IceLakePCH-N.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.22.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IvyBridgeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IvyBridge.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>IvyTownSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IvyTown.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>JaketownSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Jaketown.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabylakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Kabylake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.10.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabylakeSystemGMM.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Kabylake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.10.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabyLakePCH-HSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>KabyLakePCH-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.11.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabyLakePCH-HSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>KabyLakePCH-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.11.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabyLakePCH-HSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>KabyLakePCH-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.11.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KabyLakePCH-HSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>KabyLakePCH-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.11.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>KnightsLandingSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>KnightsLanding.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>LewisburgSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Lewisburg.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.9.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>LynxPointSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>LynxPoint.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>Lynxpoint-HRefreshSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Lynxpoint-HRefresh.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL Sensor Driver
+				<InfName>LynxPointLPSensor.inf</InfName>
+				<Class>Sensor</Class>
+				<ClassGUID>{5175D334-C371-4806-B3BA-71FD53C9258D}</ClassGUID>
+				<CatalogFile>LynxPointLP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>LynxPointLPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>LynxPointLP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>NULL_HECISystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>NULL_HECI.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>01/04/2013, 0.0.0.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>PantherPointSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>PantherPoint.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>PatsburgSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Patsburg.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>PatsburgUSB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>Patsburg.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SandyBridgeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SandyBridge.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SkylakeSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Skylake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.7.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SkylakeSystemGMM.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Skylake.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.7.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>Skylake-ESystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Skylake-E.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.8.2</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-HSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.6.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-HSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.6.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-HSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-H.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.6.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL SDHost Driver
+				<InfName>SunrisePoint-LPSDHost.inf</InfName>
+				<Class>SDHost</Class>
+				<ClassGUID>{A0A588A4-C46F-4B37-B7EA-C82FE89870C6}</ClassGUID>
+				<CatalogFile>SunrisePoint-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.5.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-LPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.5.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-LPSystemLPSS.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.5.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-LPSystemNorthpeak.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.5.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>SunrisePoint-LPSystemThermal.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>SunrisePoint-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.5.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>TigerlakePCH-LPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>TigerlakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.24.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USBFunctionController Driver
+				<InfName>TigerlakePCH-LPUSBFunctionController.inf</InfName>
+				<Class>USBFunctionController</Class>
+				<ClassGUID>{BBBE8734-08FA-4966-B6A6-4E5AD010CDD7}</ClassGUID>
+				<CatalogFile>TigerlakePCH-LP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.24.3</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>ValleyView2System.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>ValleyView2.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>ValleyView2USB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>ValleyView2.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>WellsburgSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>Wellsburg.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>WellsburgUSB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>Wellsburg.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL System Driver
+				<InfName>WildcatPointLPSystem.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>WildcatPointLP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>INTEL USB Driver
+				<InfName>WildcatPointLPUSB.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>WildcatPointLP.cat</CatalogFile>
+				<Provider>INTEL</Provider>
+				<DriverVer>07/18/1968, 10.1.3.1</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver
+				<InfName>e1e6232.INF</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1e6232.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer>03/26/2010,9.13.41.0</DriverVer>
+				<ServiceBinary>e1e6232.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver K
+				<InfName>e1k6232.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1k6232.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 04/12/2010,11.6.92.0</DriverVer>
+				<ServiceBinary>e1k6232.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver Q
+				<InfName>e1q6232.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1q6232.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 12/04/2009,11.4.7.0</DriverVer>
+				<ServiceBinary>e1q6232.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver R
+				<InfName>e1r6232.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1r6232.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 01/07/2010,11.4.16.0</DriverVer>
+				<ServiceBinary>e1r6232.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) Gigabit Network Connections Driver
+				<InfName>e1y6232.INF</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1y6232.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 04/07/2010,10.1.9.0</DriverVer>
+				<ServiceBinary>e1y6232.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver
+				<InfName>e1e6232e.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1e6232e.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer>03/26/2010,9.13.41.0</DriverVer>
+				<ServiceBinary>e1e6232e.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver K
+				<InfName>e1k62x64.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1k62x64.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 04/12/2010,11.6.92.0</DriverVer>
+				<ServiceBinary>e1k62x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver Q
+				<InfName>e1q62x64.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1q62x64.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 12/04/2009,11.4.7.0</DriverVer>
+				<ServiceBinary>e1q62x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) PRO/1000 PCI Express Network Connection Driver R
+				<InfName>e1r62x64.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1r62x64.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 01/07/2010,11.4.16.0</DriverVer>
+				<ServiceBinary>e1r62x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Gigabit Network Connections Driver
+				<InfName>e1y62x64.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> e1y62x64.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 04/07/2010,10.1.9.0</DriverVer>
+				<ServiceBinary>e1y62x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Smart Sound Technology (Intel(R) SST) Bus" 
+				<InfName>IntcAudioBus.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IntcAudioBus.cat</CatalogFile>
+				<Provider>HKR,, ProviderGuid,     0x00000000, "{B28427D2-A745-43BA-8AEC-FFE3B94F97D3}"</Provider>
+				<DriverVer>11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>IntcAudioBus.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel® Smart Sound Technology (Intel® SST)" 
+				<InfName>IntcDMic.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>IntcDMic.cat</CatalogFile>
+				<Provider>HKR,, ProviderGuid,     0x00000000, "{DAAE058C-46C9-4C13-85D9-D352FD829952}"</Provider>
+				<DriverVer>11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>IntcDMic.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) Smart Sound Technology (Intel(R) SST) OED" 
+				<InfName>IntcOED.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>IntcOED.cat</CatalogFile>
+				<Provider>HKR, Parameters, LogProviderId, 0x00010001, 0x0</Provider>
+				<DriverVer>11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>system32\cAVS\Intel(R)</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel® Smart Sound Technology (Intel® SST)" 
+				<InfName>IntcSDW.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>IntcSDW.cat</CatalogFile>
+				<Provider>HKR,, ProviderGuid,     0x00000000, "{DAAE058C-46C9-4C13-85D9-D352FD829955}"</Provider>
+				<DriverVer>11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>IntcSDW.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel® Smart Sound Technology (Intel® SST)" 
+				<InfName>IntcSST.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>IntcSST.cat</CatalogFile>
+				<Provider>HKR,, ProviderGuid,     0x00000000, "{DAAE058C-46C9-4C13-85D9-D352FD829954}"</Provider>
+				<DriverVer>11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>IntcSST.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Broadcom Simple Communications Device
+				<InfName>B57Ports.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> B57Ports.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer> 10/15/2012,1.0.0.3</DriverVer>
+				<ServiceBinary>b57ports.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Broadcom Simple Communications Device
+				<InfName>B57Ports.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> B57Ports.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer> 10/15/2012,1.0.0.3</DriverVer>
+				<ServiceBinary>b57ports.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Broadcom NetXtreme Gigabit Ethernet - NDIS 6.0
+				<InfName>b57nd60x.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> b57nd60x.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer> 09/12/2014,16.8.0.4</DriverVer>
+				<ServiceBinary>b57nd60x.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Broadcom NetXtreme Gigabit Ethernet - NDIS 6.0
+				<InfName>b57nd60a.inf</InfName>
+				<Class> Net</Class>
+				<ClassGUID> {4d36e972-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile> b57nd60a.cat</CatalogFile>
+				<Provider>Broadcom</Provider>
+				<DriverVer> 08/14/2018,214.0.0.1</DriverVer>
+				<ServiceBinary>b57nd60a.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) HD Graphics Control Panel Service
+				<InfName>cui_comp.inf</InfName>
+				<Class> SoftwareComponent</Class>
+				<ClassGUID> {5c4c3332-344d-483c-8739-259e934c9cc8}</ClassGUID>
+				<CatalogFile> igdlh.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>07/11/2018,24.20.100.6222</DriverVer>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Content Protection HECI Service
+				<InfName>iigd_base.inf</InfName>
+				<Class>Display</Class>
+				<ClassGUID>{4D36E968-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>igdlh.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>07/11/2018,24.20.100.6222</DriverVer>
+				<ServiceBinary>igdkmd64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel Corporation  Extension Driver
+				<InfName>iigd_ext.inf</InfName>
+				<Class> Extension</Class>
+				<ClassGUID> {e2f84ce7-8efa-411c-aa69-97454ca4cb57}</ClassGUID>
+				<CatalogFile> extinf.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>07/11/2018,24.20.100.6222</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Display Audio" 
+				<InfName>IntcDAud.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>IntcDAud.cat</CatalogFile>
+				<Provider>HKR,, ProviderGuid,     0x00000000, "{DAAE058C-46C9-4C13-85D9-D352FD829951}"</Provider>
+				<DriverVer>06/18/2018,10.25.00.9</DriverVer>
+				<ServiceBinary>IntcDAud.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel Corporation SoftwareComponent Driver
+				<InfName>msdk_comp.inf</InfName>
+				<Class>SoftwareComponent</Class>
+				<ClassGUID>{5c4c3332-344d-483c-8739-259e934c9cc8}</ClassGUID>
+				<CatalogFile>igdlh.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>07/11/2018,24.20.100.6222</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel Corporation SoftwareComponent Driver
+				<InfName>vk_comp.inf</InfName>
+				<Class>SoftwareComponent</Class>
+				<ClassGUID>{5c4c3332-344d-483c-8739-259e934c9cc8}</ClassGUID>
+				<CatalogFile>igdlh.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>07/11/2018,24.20.100.6222</DriverVer>
+				<ServiceBinary></ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Display Audio" 
+				<InfName>IntcDAud.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>IntcDAud.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer>06/19/2012,6.14.00.3097</DriverVer>
+				<ServiceBinary>IntcDAud.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) HD Graphics
+				<InfName>igdlh64.inf</InfName>
+				<Class>Display</Class>
+				<ClassGUID>{4D36E968-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>igdlh.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer>10/31/2013,9.17.10.3347</DriverVer>
+				<ServiceBinary>igdkmd64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Serial IO GPIO Driver v2
+				<InfName>iaLPSS2_GPIO2_ICL.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>iaLPSS2_GPIO2_ICL.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer> 05/23/2018,30.100.1821.1</DriverVer>
+				<ServiceBinary>iaLPSS2_GPIO2.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Serial IO I2C Driver v2
+				<InfName>iaLPSS2_I2C_ICL.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>iaLPSS2_I2C_ICL.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer> 05/23/2018,30.100.1821.1</DriverVer>
+				<ServiceBinary>iaLPSS2_I2C.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Serial IO SPI Driver v2
+				<InfName>iaLPSS2_SPI_ICL.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>iaLPSS2_SPI_ICL.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer> 05/23/2018,30.100.1821.1</DriverVer>
+				<ServiceBinary>iaLPSS2_SPI.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) Serial IO UART Driver v2
+				<InfName>iaLPSS2_UART2_ICL.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> iaLPSS2_UART2_ICL.cat</CatalogFile>
+				<Provider>Intel Corporation</Provider>
+				<DriverVer> 05/23/2018,30.100.1821.1</DriverVer>
+				<ServiceBinary>iaLPSS2_UART2.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Windows Driver Foundation - User-mode Driver Framework Reflector
+				<InfName>DetectionVerificationDrv.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>DetectionVerificationDrv.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer> 11/14/2017,010.23.00.1198</DriverVer>
+				<ServiceBinary>WUDFRd.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Broadcom Corporation        System Driver
+				<InfName>bScsiSDx.inf</InfName>
+				<Class>       System</Class>
+				<ClassGUID>       {4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>bscsisdx.cat</CatalogFile>
+				<Provider>Broadcom Corporation</Provider>
+				<DriverVer>01/10/2014,1.0.0.256</DriverVer>
+				<ServiceBinary>bScsiSDx.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Broadcom Corporation        System Driver
+				<InfName>bScsiSDa.inf</InfName>
+				<Class>       System</Class>
+				<ClassGUID>       {4D36E97D-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>bscsisda.cat</CatalogFile>
+				<Provider>Broadcom Corporation</Provider>
+				<DriverVer>01/10/2014,1.0.0.256</DriverVer>
+				<ServiceBinary>bScsiSDa.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Serenum Filter Driver
+				<InfName>mesrl.inf</InfName>
+				<Class>Ports</Class>
+				<ClassGUID>{4D36E978-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile> mesrl.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 10/31/2017,1744.12.0.1071</DriverVer>
+				<ServiceBinary>serenum.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 Host Controller Switch Driver
+				<InfName>iusb3hcs.inf</InfName>
+				<Class>System     </Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}     </ClassGUID>
+				<CatalogFile>iusb3hcs.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3hcs.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 Host Controller Switch Driver
+				<InfName>iusb3hcs.inf</InfName>
+				<Class>System     </Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}     </ClassGUID>
+				<CatalogFile>iusb3hcs.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3hcs.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 Hub Driver
+				<InfName>iusb3hub.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>iusb3hub.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3hub.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 eXtensible Host Controller Driver
+				<InfName>iusb3xhc.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>iusb3xhc.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3xhc.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 Hub Driver
+				<InfName>iusb3hub.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>iusb3hub.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3hub.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name>Intel(R) USB 3.0 eXtensible Host Controller Driver
+				<InfName>iusb3xhc.inf</InfName>
+				<Class>USB</Class>
+				<ClassGUID>{36FC9E60-C465-11CF-8056-444553540000}</ClassGUID>
+				<CatalogFile>iusb3xhc.cat</CatalogFile>
+				<Provider>Intel(R) Corporation</Provider>
+				<DriverVer>12/04/2012,1.0.7.248</DriverVer>
+				<ServiceBinary>iusb3xhc.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>no</isX64>
+			</Name>
+			<Name> "Advanced Micro Devices, Inc." Display Driver
+				<InfName>C0332491.inf</InfName>
+				<Class>Display</Class>
+				<ClassGUID>{4D36E968-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>C0332491.CAT</CatalogFile>
+				<Provider> "Advanced Micro Devices, Inc."</Provider>
+				<DriverVer>08/22/2018, 24.20.12034.21</DriverVer>
+				<ServiceBinary>B332441\atikmdag.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name> "Advanced Micro Devices, Inc." Display Driver
+				<InfName>U0332491.inf</InfName>
+				<Class>Display</Class>
+				<ClassGUID>{4D36E968-E325-11CE-BFC1-08002BE10318}</ClassGUID>
+				<CatalogFile>U0332491.CAT</CatalogFile>
+				<Provider> "Advanced Micro Devices, Inc."</Provider>
+				<DriverVer>08/22/2018, 24.20.12034.21</DriverVer>
+				<ServiceBinary>B332441\atikmdag.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+			<Name> "Intel(R) Management Engine Interface "
+				<InfName>heci.inf</InfName>
+				<Class>System</Class>
+				<ClassGUID>{4d36e97d-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>HECI.cat</CatalogFile>
+				<Provider>Intel</Provider>
+				<DriverVer> 01/16/2018,1803.12.0.1093</DriverVer>
+				<ServiceBinary>TeeDriverW8x64.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>Both</isX64>
+			</Name>
+			<Name>AMD Function Driver for HD Audio Service
+				<InfName>AtihdWT6.inf</InfName>
+				<Class>MEDIA</Class>
+				<ClassGUID>{4d36e96c-e325-11ce-bfc1-08002be10318}</ClassGUID>
+				<CatalogFile>AtihdWT6.cat</CatalogFile>
+				<Provider>Advanced Micro Devices</Provider>
+				<DriverVer>03/30/2018,10.0.1.07</DriverVer>
+				<ServiceBinary>system32\drivers\AtihdWT6.sys</ServiceBinary>
+				<HardwareID></HardwareID>
+				<isX64>yes</isX64>
+			</Name>
+		</ThirdParty>
+	</InfInfo>
+	<FileInfo/>
+</BuildInfo>

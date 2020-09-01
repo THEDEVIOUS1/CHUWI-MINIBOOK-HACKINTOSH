@@ -1,0 +1,122 @@
+﻿; Installation inf for null device drivers
+;
+; Copyright © 2006 Apple Inc. All Rights Reserved.
+;
+
+[Version]
+Signature=$Windows NT$
+Class=System
+ClassGuid={4d36e97d-e325-11ce-bfc1-08002be10318}
+DriverPackageDisplayName="Apple System Device"
+Provider=%MFGNAME%
+CatalogFile=AppleNull64.cat
+DriverVer=08/24/2018,6.1.7200.0
+
+[Manufacturer]
+%MFGNAME%=Company.NT.5.1,NTamd64
+
+[Company.NT.5.1.NTamd64]
+%SMC_DESCRIPTION%           = NullDeviceInstall,ACPI\APP0001
+%BACKLIGHT_DESCRIPTION%     = NullDeviceInstall,ACPI\APP0002
+%MCE_GPE_DESCRIPTION%       = NullDeviceInstall,ACPI\APP0006
+%GRAPHICS_MUX_DESCRIPTION%  = NullDeviceInstall,ACPI\APP000B
+%SMBHC_DESCRIPTION%         = NullDeviceInstall,ACPI\ACPI0001
+%TPM_DESCRIPTION%           = NullDeviceInstall,ACPI\IFX0101
+%DMA_DESCRIPTION%           = NullDeviceInstall,PCI\VEN_8086&DEV_1A38
+%PERF_COUNTERS_DESCRIPTION% = NullDeviceInstall,PCI\VEN_8086&DEV_27A3
+%NCM_DEVICE%                = NullDeviceInstall,USB\VID_05AC&PID_8233
+
+%ISIGHT_DESCRIPTION%        = NullDeviceInstall,USB\VID_05AC&PID_8502&MI_02
+%ISIGHT_DESCRIPTION%        = NullDeviceInstall,USB\VID_05AC&PID_8505&MI_02
+%ISIGHT_DESCRIPTION%        = NullDeviceInstall,USB\VID_05AC&PID_8507&MI_02
+%ISIGHT_EXT_DESCRIPTION%    = NullDeviceInstall,USB\VID_05AC&PID_8508&MI_02
+%FACETIME_DESCRIPTION%      = NullDeviceInstall,USB\VID_05AC&PID_8509&MI_02
+%ISIGHT_EXT_DESCRIPTION%    = NullDeviceInstall,USB\VID_05AC&PID_850A&MI_02
+%FACETIME_DESCRIPTION%      = NullDeviceInstall,USB\VID_05AC&PID_850B&MI_02
+%FACETIME_DESCRIPTION%      = NullDeviceInstall,USB\VID_05AC&PID_8510&MI_02
+%FACETIME_DESCRIPTION%      = NullDeviceInstall,USB\VID_05AC&PID_8511&MI_02
+%FACETIME_DESCRIPTION%      = NullDeviceInstall,USB\VID_05AC&PID_1112&MI_02
+
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_1513&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_151A&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_1547&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_1568&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_156A&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_156C&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_1577&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_15D2&CC_0880
+%THUNDERBOLT_DESCRIPTION%   = NullDeviceInstall,PCI\VEN_8086&DEV_15EB&CC_0880
+
+%USB_HOST_CTLR_DESCRIPTION% = NullDeviceInstall,PCI\VEN_8086&DEV_3B36&CC_0C03
+%USB_HOST_CTLR_DESCRIPTION% = NullDeviceInstall,PCI\VEN_8086&DEV_3B3B&CC_0C03
+%SERIAL_IO_DMA_CONTROLLER%  = NullDeviceInstall,PCI\VEN_8086&DEV_9CE0&CC_0801
+
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0267&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0269
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0273&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0274&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0290&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,USB\VID_05AC&PID_0291&MI_00
+
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0272&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0272&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0272&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0273&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0273&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0273&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0275&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0275&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0275&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0276&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0276&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0276&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0277&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0277&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0277&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0278&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0278&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0278&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0279&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0279&MI_03
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0279&MI_04
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0290&MI_00
+%APPLE_INPUT_DEVICE%        = NullDeviceInstall,SPI\VID_05AC&PID_0291&MI_00
+
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\ADIO0003
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\ANS20000
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\SEPM0002
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\VEN_BCM&DEV_238D
+%SYSTEM_DEVICE%             = NullDeviceInstall,PCI\VEN_106B&DEV_1802
+%SYSTEM_DEVICE%             = NullDeviceInstall,PCI\VEN_8086&DEV_A2BA
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\APPBC00
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\APPBC01
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\VEN_INT&DEV_34BA
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\VEN_INT&DEV_344A
+%SYSTEM_DEVICE%             = NullDeviceInstall,ACPI\VEN_APP&DEV_9876
+
+[NullDeviceInstall.NT]
+; (null driver)
+
+[NullDeviceInstall.NT.Services]
+AddService = ,2    ; no value for the service name
+
+[Strings]
+MFGNAME="Apple Inc."
+SMC_DESCRIPTION="Apple SMC device"
+BACKLIGHT_DESCRIPTION="Apple panel backlight"
+GRAPHICS_MUX_DESCRIPTION="Apple graphics mux"
+MCE_GPE_DESCRIPTION="Apple memory controller GPE event"
+SMBHC_DESCRIPTION="Apple SMBus 1.0 Host controller"
+TPM_DESCRIPTION="Apple trusted platform module"
+DMA_DESCRIPTION="Apple 5000 Series Chipset DMA Engine"
+PERF_COUNTERS_DESCRIPTION="Apple performance counters"
+ISIGHT_DESCRIPTION="Apple Built-in iSight"
+ISIGHT_EXT_DESCRIPTION="Apple iSight"
+FACETIME_DESCRIPTION="FaceTime HD camera"
+THUNDERBOLT_DESCRIPTION="Thunderbolt"
+USB_HOST_CTLR_DESCRIPTION="USB Universal Host Controller"
+
+SERIAL_IO_DMA_CONTROLLER="Serial IO DMA Controller"
+APPLE_INPUT_DEVICE="Apple input device"
+SYSTEM_DEVICE="System Device"
+NCM_DEVICE="NCM Composite Device"
