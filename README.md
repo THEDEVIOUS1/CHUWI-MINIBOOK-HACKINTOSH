@@ -10,12 +10,13 @@ If you see anything that could be added or changed don't hesitate to make a pull
 
 ##  Basic Usage
 
-1. Create a bootable Mojave or Catalina bootable USB using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/) OR this [tutorial](https://www.olarila.com/topic/6278-new-vanilla-olarila-images/)(arguably easier but must register) but use my CLOVER folder at the point where you should configure CLOVER bootloader
-2. Boot from this usb then install Mojave/Catalina on a free partition of your drive ( please note...must be installed to ssd as macos does not detect emmc )
-3. During first boot, after installing the OS, mount your EFI partition and place the CLOVER folder alongside other OSes bootloader
-4. Reboot and change BIOS bootloader order to have clover bootloader as first entry
+1. Create a bootable Mojave or Catalina bootable USB using a macOS installer downloaded from the AppStore or using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/). I recommend using the free "Install Disk Creator" by MacDaddy to create the installer USB.
+2. Once install disk is created mount EFI partition and copy either the CLOVER or OpenCore EFI folder to your Install Disk's EFI partition you just mounted. DO NOT CREATE YOUR OWN CLOVER OR OPENCORE EFI, this device requires special patches to protect it from overheating.
+3. Boot from this usb then install macOS on a free partition of your drive ( please note...must be installed to ssd as macos does not detect emmc )
+3. During first boot, after installing the OS, mount your EFI partition and copy over your Clover or OpenCore folders along with your BOOT folder found in the EFI folder on your install usb; you must copy/overwrite the same folders on the same partition located on your SSD.
+4. Reboot and change BIOS bootloader order to have Clover or OpenCore bootloader as first entry
 5. Open your config.plist and generate a new serial number [Tutorial here](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306/)
-6. Install additionals drivers
+6. Install any additional software and drivers if needed for your specific needs.
 7. Reboot and enjoy !
 
 
@@ -35,12 +36,12 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - Method 1
 1. flash modified bios *warning-possibility of windows serial key being deleted so proceed with caution* (format usb stick to fat 32, copy files inside of folder to root of drive then reboot)
 2. enter bios using f7(fn + 7) then go to chipset -> system agent -> graphics configuration -> dvmt pre-allocated and change to 64mb
-3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
+3. delete config.plist and rename config4k.plist (or similar name) to config.plist
 
 - Method 2
 1. load clover and select "start uefi shell 64" 
 2. enter the command "setup_var_3 0x894 0x2" (without the quotations) hit enter then type exit
-3. either delete config.plist and rename config4k.plist to config.plist OR select config4k at clover boot screen under options
+3. delete config.plist and rename config4k.plist (or similar name) to config.plist
 
 ### Additional drivers
 
@@ -56,10 +57,10 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 
 ## What works
 
-- Graphic Acceleration
+- Graphic Acceleration including 4K support
 - Bluetooth (Improved Reliability)
 - Brightness
-- Audio (Fixed audio after sleep)
+- Audio
 - Power Management
 - Battery 
 - USB
@@ -70,17 +71,20 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - TrackPoint 
 - HDMI / Type-C
 - Windows boot from OpenCore
-- TouchScreen / Stylus (double click doesnt work and non-functional on mojave)
+- TouchScreen / Stylus (double click doesnt work well and only works in Catalina)
 - Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and check "load at login" to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password)
 - FileVault Supported
+- Recovery Supported
+- Fan Speed reporting (estimated speed not actual, requires use of FakeSMC and special EFI)
 
 ## Planned/In Progress Fixes
 
-- Accelerometer (likely will not have full support but may allow for a triggered rotate when keyboard flipped)
-- Auto shut off of Keyboard when flipped into tablet mode
-- Additional resolutions on internal monitor (may not be possible, so don't get your hopes up yet)
+- Accelerometer (Researching options)
+- Auto shut off of Keyboard when flipped into tablet mode (Researching options)
+- Additional resolutions on internal monitor (In-Progress; might actually be possible)
 - Native Brightness Key Activation
 - Native Sleep Button support
+- Touch Screen support in Big Sur
 
 ## What doesn't work
 
