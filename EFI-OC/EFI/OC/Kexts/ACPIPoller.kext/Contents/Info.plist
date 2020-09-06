@@ -57,6 +57,8 @@
 			<key>Methods</key>
 			<array>
 				<string>FCPU</string>
+				<string>TAB0</string>
+				<string>FANS</string>
 			</array>
 		</dict>
 	</dict>
