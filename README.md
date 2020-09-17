@@ -123,7 +123,7 @@ You may see the app launch one or two times more (not sure why) but should stop 
 ## What works
 
 - Graphic Acceleration including 4K support
-- Bluetooth (Improved Reliability)
+- Bluetooth
 - Brightness
 - Audio
 - Power Management
@@ -131,30 +131,27 @@ You may see the app launch one or two times more (not sure why) but should stop 
 - USB
 - Keyboard
 - Camera
-- Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works)
-- FAN now operates automatically on Cold/Warm boot and after sleep.
+- Sleep / Wake
+- Fully Automated FAN
 - TrackPoint 
 - HDMI / Type-C
 - Windows boot from OpenCore
-- TouchScreen / Stylus (double click doesnt work well and only works in Catalina)
-- Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and check "load at login" to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password)
+- TouchScreen / Stylus (double click doesnt work well)
+- Internal Wi-Fi (Use Heliport for OpenCore 0.6.0 or below and for all Clover bootloaders. OpenCore 0.6.1 and higher now has native WiFi support without 3rd party app)
 - FileVault Supported
 - Recovery Supported
-- Fan Speed reporting (estimated speed not actual, requires use of FakeSMC and special EFI)
+- Fan Speed reporting (estimated speed not actual, requires use of special EFI located in Archive folder (NO LONGER BEING UPDATED))
+- Native Sleep Button Support (OpenCore only)
 
-## Planned/In Progress Fixes
+## Planned Features
 
-- Accelerometer (Researching options)
-- Auto shut off of Keyboard when flipped into tablet mode (Researching options)
-- Additional resolutions on internal monitor (In-Progress; might actually be possible)
-- Native Brightness Key Activation
-- Native Sleep Button support
-- Touch Screen support in Big Sur
-- Secure Boot (Coming soon thanks to the OpenCore team)
+- Auto rotate screen and keyboard shut-off when in tablet mode
+- Additional resolutions for internal monitor
 
 ## What doesn't work
 
 - Fingerprint Sensor
+- Native Brightness Key Buttons (limitation imposed on the Embedded Controller programming from OEM)
 - Card Reader
 - Emmc
 - Accelerometer
