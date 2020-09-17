@@ -17,8 +17,9 @@ If you see anything that could be added or changed don't hesitate to make a pull
 5. During first boot, after installing the OS, mount your EFI partition and copy over your Clover or OpenCore folders along with your BOOT folder found in the EFI folder on your install usb; you must copy/overwrite the same folders on the same partition located on your SSD.
 6. Reboot and change BIOS bootloader order to have Clover or OpenCore bootloader as first entry
 7. Open your config.plist and generate a new serial number [Tutorial here](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306/)
-8. Install any additional software and drivers if needed for your specific needs.
-9. Reboot and enjoy !
+8. Enable Full Sleep Button Support by following instructions below at section titled "Enabling Sleep Button Support"
+9 Install any additional software and drivers if needed for your specific needs.
+10. Reboot and enjoy !
 
 ## BootCamp Install (Requires OpenCore: macOS as Primary OS, Windows as secondary)
 
@@ -27,7 +28,7 @@ PRE-WORK:
 - Format your entire SSD as GPT partition scheme with only an EFI partition and what will be your macOS partition. I recommend using a linux live USB and gparted for formating and partitioning your SSD. Set the EFI partition size as 200mb (recommend 300-500mb), the rest of the drive should be partitioned for macOS and you should use either NTFS or exFAT partioning.
 - You MUST USE OPENCORE for your EFI. NO EXCEPTIONS, this will not work properly if you use Clover.
 
-1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-8)
+1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-9)
 * If you only want macOS and no other OS then you can stop here. Otherwise go to step 2.
 2. Launch "Boot Camp Assistant" and "partition" your drive the way you would like. You must have your Windows iso copied over to your macOS install now. 
 3. Boot Camp Assistant will ask you where your Windows iso is and will create a special partition with the Boot Camp files and Windows installer. After it has finished it will attempt to reboot to start the Windows install. IT WILL FAIL and thats ok.
