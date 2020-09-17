@@ -18,8 +18,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 6. Reboot and change BIOS bootloader order to have Clover or OpenCore bootloader as first entry
 7. Open your config.plist and generate a new serial number [Tutorial here](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306/)
 8. Enable Full Sleep Button Support by following instructions below at section titled "Enabling Sleep Button Support"
-9 Install any additional software and drivers if needed for your specific needs.
-10. Reboot and enjoy !
+9. Install any additional software and drivers if needed for your specific needs
+10. Reboot and enjoy!
 
 ## BootCamp Install (Requires OpenCore: macOS as Primary OS, Windows as secondary)
 
