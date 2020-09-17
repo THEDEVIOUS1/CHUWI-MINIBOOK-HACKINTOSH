@@ -28,7 +28,7 @@ PRE-WORK:
 - Format your entire SSD as GPT partition scheme with only an EFI partition and what will be your macOS partition. I recommend using a linux live USB and gparted for formating and partitioning your SSD. Set the EFI partition size as 200mb (recommend 300-500mb), the rest of the drive should be partitioned for macOS and you should use either NTFS or exFAT partioning.
 - You MUST USE OPENCORE for your EFI. NO EXCEPTIONS, this will not work properly if you use Clover.
 
-1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-9)
+1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-9 from previous "Basic Install" section)
 * If you only want macOS and no other OS then you can stop here. Otherwise go to step 2.
 2. Launch "Boot Camp Assistant" and "partition" your drive the way you would like. You must have your Windows iso copied over to your macOS install now. 
 3. Boot Camp Assistant will ask you where your Windows iso is and will create a special partition with the Boot Camp files and Windows installer. After it has finished it will attempt to reboot to start the Windows install. IT WILL FAIL and thats ok.
