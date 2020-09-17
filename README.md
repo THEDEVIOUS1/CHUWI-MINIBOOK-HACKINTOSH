@@ -17,8 +17,9 @@ If you see anything that could be added or changed don't hesitate to make a pull
 5. During first boot, after installing the OS, mount your EFI partition and copy over your Clover or OpenCore folders along with your BOOT folder found in the EFI folder on your install usb; you must copy/overwrite the same folders on the same partition located on your SSD.
 6. Reboot and change BIOS bootloader order to have Clover or OpenCore bootloader as first entry
 7. Open your config.plist and generate a new serial number [Tutorial here](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306/)
-8. Install any additional software and drivers if needed for your specific needs.
-9. Reboot and enjoy !
+8. Enable Full Sleep Button Support by following instructions below at section titled "Enabling Sleep Button Support"
+9. Install any additional software and drivers if needed for your specific needs
+10. Reboot and enjoy!
 
 ## BootCamp Install (Requires OpenCore: macOS as Primary OS, Windows as secondary)
 
@@ -27,7 +28,7 @@ PRE-WORK:
 - Format your entire SSD as GPT partition scheme with only an EFI partition and what will be your macOS partition. I recommend using a linux live USB and gparted for formating and partitioning your SSD. Set the EFI partition size as 200mb (recommend 300-500mb), the rest of the drive should be partitioned for macOS and you should use either NTFS or exFAT partioning.
 - You MUST USE OPENCORE for your EFI. NO EXCEPTIONS, this will not work properly if you use Clover.
 
-1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-8)
+1. Install macOS from install disk to SSD using the entire drive. (Follow steps 1-2 & 5-9 from previous "Basic Install" section)
 * If you only want macOS and no other OS then you can stop here. Otherwise go to step 2.
 2. Launch "Boot Camp Assistant" and "partition" your drive the way you would like. You must have your Windows iso copied over to your macOS install now. 
 3. Boot Camp Assistant will ask you where your Windows iso is and will create a special partition with the Boot Camp files and Windows installer. After it has finished it will attempt to reboot to start the Windows install. IT WILL FAIL and thats ok.
@@ -62,6 +63,41 @@ to enable HiDPI mode ( adds 960 x 600 ) enter the following command in terminal 
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 
 
+## Enabling Reliable Sleep Button Support (Sleep button will be enabled in Stable Release 1.0.0)
+
+The sleep button now has support and launches the power menu when pressed. In some situations however, it can be either slow to launch or may stop working for a few restarts. To enable full Sleep Button Support use "Stable Release 1.0.0" and then open Terminal and run the following command:
+
+defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool no
+
+If your sleep button isn't working the way you want there is a really great workaround that can be used with any EFI release version 0.2.0 or higher. Use the following instructions to implement this workaround *Requires Xcode*:
+
+1. Once you have installed macOS [Download PowerKey](https://pkamb.github.io/PowerKey/) source code. Or support the developer and purchase the compiled version.
+2. Unzip the source code and open the xcode project --> Build the project and then archive and export the compiled application --> Once compiled copy to Applications.
+3. Launch the PowerKey application (You might need to authorize the application with GateKeeper).
+4. Click the drop down and select "F13" (you can select something else if you want but then it won't work to put your computer to sleep)
+5. Check the box to open at login
+6. Click Run in Background
+7. Open the Settings application
+8. Click Keyboard
+9. Click Shortcuts
+10. Click App Shortcuts
+11. Click the Plus icon
+12. Leave the dropdown as All Applications and click into Menu Title
+13. Type in "Sleep" without the ""
+14. Click into the Keyboard Shortcut box and then press the Sleep Button once quickly
+15. If the box says F13 then you have done everything correctly. If not go back to the beginning because you have missed something.
+16. Click Add
+
+Congratulations your sleep button now works as it should and it will remain reliable. If PowerKey keeps opening up at login instead of running in the background at launch you can fix this really easily. 
+1. Go back to the Settings App if you closed it
+2. Click Users & Groups
+3. Your User Profile should be selected already so go ahead and click Login Items
+4. You should see PowerKey in this list. Click the check box to "hide" the application
+
+You may see the app launch one or two times more (not sure why) but should stop after that.
+
+#Credit goes to Peter Kamb for the excellent PowerKey application [pkamb GitHub](https://github.com/pkamb/PowerKey)
+
 ## Setting resolutions over 1080p
 - Method 1
 1. flash modified bios *warning-possibility of windows serial key being deleted so proceed with caution* (format usb stick to fat 32, copy files inside of folder to root of drive then reboot)
@@ -88,7 +124,7 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 ## What works
 
 - Graphic Acceleration including 4K support
-- Bluetooth (Improved Reliability)
+- Bluetooth
 - Brightness
 - Audio
 - Power Management
@@ -96,30 +132,27 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 - USB
 - Keyboard
 - Camera
-- Sleep / Wake ( lid, timed & manual sleep seem to function fine but button appears to be problematic even though power awake works)
-- FAN now operates automatically on Cold/Warm boot and after sleep.
+- Sleep / Wake
+- Fully Automated FAN
 - TrackPoint 
 - HDMI / Type-C
 - Windows boot from OpenCore
-- TouchScreen / Stylus (double click doesnt work well and only works in Catalina)
-- Internal Wi-Fi (use the heliport app to join networks just like the built in wireless and check "load at login" to autostart it if u would like...if u want to connect to your home internet automatically then u will need to edit the info.plist of the itlwm.kext with your ssid and password)
+- TouchScreen / Stylus (double click doesnt work well)
+- Internal Wi-Fi (Use Heliport for OpenCore 0.6.0 or below and for all Clover bootloaders. OpenCore 0.6.1 and higher now has native WiFi support without 3rd party app)
 - FileVault Supported
 - Recovery Supported
-- Fan Speed reporting (estimated speed not actual, requires use of FakeSMC and special EFI)
+- Fan Speed reporting (estimated speed not actual, requires use of special EFI located in Archive folder (NO LONGER BEING UPDATED))
+- Native Sleep Button Support (OpenCore only)
 
-## Planned/In Progress Fixes
+## Planned Features
 
-- Accelerometer (Researching options)
-- Auto shut off of Keyboard when flipped into tablet mode (Researching options)
-- Additional resolutions on internal monitor (In-Progress; might actually be possible)
-- Native Brightness Key Activation
-- Native Sleep Button support
-- Touch Screen support in Big Sur
-- Secure Boot (Coming soon thanks to the OpenCore team)
+- Auto rotate screen and keyboard shut-off when in tablet mode
+- Additional resolutions for internal monitor
 
 ## What doesn't work
 
 - Fingerprint Sensor
+- Native Brightness Key Buttons (limitation imposed on the Embedded Controller programming from OEM)
 - Card Reader
 - Emmc
 - Accelerometer
@@ -156,3 +189,4 @@ Special thanks to my Minibook bro [@Balopez](https://github.com/balopez83/One-Mi
 [All users from the GPD Discord]() especially [@azkali](https://github.com/Azkali/GPD-P2-MAX-Hackintosh) <br>
 [Fewt's Hackintosh guide](https://fewt.gitbook.io/laptopguide/) <br>
 [CHUWI for making the great Minibook](https://www.chuwi.com/cn/) <br>
+[Peter Kamb for the excellent PowerKey application on GitHub](https://github.com/pkamb/PowerKey) <br>
