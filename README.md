@@ -64,7 +64,12 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 
 ## Enabling Reliable Sleep Button Support (Sleep button will be enabled in Release 0.3.0)
 
-The sleep button now has support and launches the power menu when pressed. In some situations however, it can be either slow to launch or may stop working for a few restarts. While the sleep button is registered by macOS there are some issues that we are working to resolve though you do not have to wait for us to fix the problem for you to have a reliable sleep button. Here is the workaround that can be used with any EFI release version 0.2.0 or higher. *Requires Xcode*
+The sleep button now has support and launches the power menu when pressed. In some situations however, it can be either slow to launch or may stop working for a few restarts. To enable full Sleep Button Support use "Stable Release 1.0.0" and then open Terminal and run the following command:
+
+defaults write com.apple.loginwindow PowerButtonSleepsSystem -bool no
+
+If your sleep button isn't working the way you want there is a really great workaround that can be used with any EFI release version 0.2.0 or higher. Use the following instructions to implement this workaround *Requires Xcode*:
+
 1. Once you have installed macOS [Download PowerKey](https://pkamb.github.io/PowerKey/) source code. Or support the developer and purchase the compiled version.
 2. Unzip the source code and open the xcode project --> Build the project and then archive and export the compiled application --> Once compiled copy to Applications.
 3. Launch the PowerKey application (You might need to authorize the application with GateKeeper).
