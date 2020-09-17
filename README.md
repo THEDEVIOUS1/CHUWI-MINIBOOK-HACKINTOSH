@@ -62,7 +62,7 @@ to enable HiDPI mode ( adds 960 x 600 ) enter the following command in terminal 
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 
 
-## Enabling Reliable Sleep Button Support (Sleep button will be enabled in Release 0.3.0)
+## Enabling Reliable Sleep Button Support (Sleep button will be enabled in Stable Release 1.0.0)
 
 The sleep button now has support and launches the power menu when pressed. In some situations however, it can be either slow to launch or may stop working for a few restarts. To enable full Sleep Button Support use "Stable Release 1.0.0" and then open Terminal and run the following command:
 
