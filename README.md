@@ -137,7 +137,7 @@ You may see the app launch one or two times more (not sure why) but should stop 
 - TrackPoint 
 - HDMI / Type-C
 - Windows boot from OpenCore
-- TouchScreen / Stylus (double click doesnt work well)
+- TouchScreen / Stylus (Beta Support with issues: double click doesnt work well, touch won't disable with lid close but will on sleep, Catalina supported only, Voodooi2C 2.3 supported only, OC 0.6.0 and below supported only, Clover v5120 and below supported)(Please file all issues related to touch with the VoodooGoodix team)
 - Internal Wi-Fi (Use Heliport for OpenCore 0.6.0 or below and for all Clover bootloaders. OpenCore 0.6.1 and higher now has native WiFi support without 3rd party app)
 - FileVault Supported
 - Recovery Supported
