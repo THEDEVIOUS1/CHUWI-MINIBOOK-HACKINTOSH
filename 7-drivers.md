@@ -1,4 +1,4 @@
-## Chapter 6) Additional Drivers
+## Chapter 7) Additional Drivers
 
 [Wifi dongle driver](https://github.com/chris1111/Wireless-USB-Adapter-Clover)
 
