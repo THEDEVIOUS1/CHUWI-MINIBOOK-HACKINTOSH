@@ -1,4 +1,4 @@
-## BootCamp Install (Requires OpenCore: macOS as Primary OS, Windows as secondary)
+## Chapter 1) BootCamp Install (Requires OpenCore: macOS as Primary OS, Windows as secondary)
 
 PRE-WORK: 
 - Create a Windows 10 iso file using the "Windows Media Creation Tool" within Windows OR google search Windows 10 iso file from Safari. Set aside, we will need this later.
