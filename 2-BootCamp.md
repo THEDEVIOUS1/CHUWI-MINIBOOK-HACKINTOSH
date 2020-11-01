@@ -26,4 +26,4 @@ PRE-WORK:
 12. Congratulations you are done. 
 
 * Final Thoughts: Windows is now installed thinking its on a mac, if you accidently boot into Windows using your UEFI boot options you may get a notification that your Microsoft account requires an update or authentication. This is related to the computer now identifying differently and is related to the activation of Windows. Don't worry, you won't loose activation but it is annoying. I simply recommend always booting to Windows from OpenCore and you won't ever have to deal with this. Simply reboot into Windows using OpenCore and then re-authenticate when it pops up. You won't see it again until the next time you accidently boot direct to Windows from the UEFI.
-* Installing other OS's: see "Using Other Operating Systems with OpenCore section below"
+* Installing other OS's: see Chapter 9 titled "Other OS's and OpenCore"
