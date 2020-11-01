@@ -1,4 +1,4 @@
-## Chapter 1) BootCamp Install 
+## Chapter 2) BootCamp Install 
 ## (Requires OpenCore: macOS as Primary OS, Windows as secondary)
 
 PRE-WORK: 
