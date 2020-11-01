@@ -1,5 +1,5 @@
 ##  Chapter 1) Quick Start Install 
-## (Windows or Linux as Primary OS)
+## (Windows or Linux as Primary OS - If you would rather have a traditional macOS install then read Chapter 2 before starting)
 
 1. Create a bootable Mojave or Catalina bootable USB using a macOS installer downloaded from the AppStore or using this [tutorial](https://internet-install.gitbook.io/macos-internet-install/). I recommend using the free "Install Disk Creator" by MacDaddy to create the installer USB.
 2. Once install disk is created mount EFI partition and copy either the CLOVER or OpenCore EFI folder to your Install Disk's EFI partition you just mounted. DO NOT CREATE YOUR OWN CLOVER OR OPENCORE EFI, this device requires special patches to protect it from overheating.
@@ -8,6 +8,6 @@
 5. During first boot, after installing the OS, mount your EFI partition and copy over your Clover or OpenCore folders along with your BOOT folder found in the EFI folder on your install usb; you must copy/overwrite the same folders on the same partition located on your SSD.
 6. Reboot and change BIOS bootloader order to have Clover or OpenCore bootloader as first entry
 7. Open your config.plist and generate a new serial number [Tutorial here](https://hackintosher.com/forums/thread/generate-your-own-hackintosh-serial-number-board-serial-number-uuid-mlb-rom-in-clover.306/)
-8. Enable Full Sleep Button Support by following instructions below at section titled "Enabling Sleep Button Support"
+8. Enable Full Sleep Button Support by following instructions in the chapter titled "Enabling Reliable Sleep Button Support"
 9. Install any additional software and drivers if needed for your specific needs
 10. Reboot and enjoy!
