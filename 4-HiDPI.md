@@ -1,4 +1,4 @@
-## Chapter 3) Enabling HiDPI Mode
+## Chapter 4) Enabling HiDPI Mode
 
 You can enable HiDPI mode which adds 960x600 to the list of available display resolution options.
 
