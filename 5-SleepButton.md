@@ -1,4 +1,4 @@
-## Chapter 4) Enabling Reliable Sleep Button Support
+## Chapter 5) Enabling Reliable Sleep Button Support
 
 Sleep button enabled for Release 1.0.0 and above
 
