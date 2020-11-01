@@ -6,24 +6,24 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
 
 ## *** NOTICE ***
-## - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
-## - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
-## - OpenCore Release Version 1.1.0 and below should be used for macOS Catalina and below. 
-## - OpenCore Release Version 1.2.0 and above should be used for macOS Big Sur and above.
+### - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
+### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
+### - OpenCore Release Version 1.1.0 and below should be used for macOS Catalina and below. 
+### - OpenCore Release Version 1.2.0 and above should be used for macOS Big Sur and above.
 
 
 ##
 ## Full Instruction Guide
 
 ### [Chapter 1) Quick Start Install](/1-QuickStart.md)
-[Chapter 2) BootCamp Install](/2-BootCamp.md)
-[Chapter 3) Changing the Display Orientation](/3-Orientation.md)
-[Chapter 4) Enabling HiDPI Mode](/4-HiDPI.md)
-[Chapter 5) Enabling Reliable Sleep Button Support](/5-SleepButton.md)
-[Chapter 6) Setting Resolutions Over 1080p](/6-1080p&up.md)
-[Chapter 7) Additional Drivers](/7-drivers.md)
-[Chapter 8) Other Operating Systems](/8-OtherOS.md)
-[Chapter 9) Other OS's and OpenCore](/9-OtherOS&OC.md)
+### [Chapter 2) BootCamp Install](/2-BootCamp.md)
+### [Chapter 3) Changing the Display Orientation](/3-Orientation.md)
+### [Chapter 4) Enabling HiDPI Mode](/4-HiDPI.md)
+### [Chapter 5) Enabling Reliable Sleep Button Support](/5-SleepButton.md)
+### [Chapter 6) Setting Resolutions Over 1080p](/6-1080p&up.md)
+### [Chapter 7) Additional Drivers](/7-drivers.md)
+### [Chapter 8) Other Operating Systems](/8-OtherOS.md)
+### [Chapter 9) Other OS's and OpenCore](/9-OtherOS&OC.md)
 
 ## What works 
 
