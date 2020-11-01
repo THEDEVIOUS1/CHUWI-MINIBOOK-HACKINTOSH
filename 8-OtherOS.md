@@ -1,4 +1,4 @@
-## Chapter 7) Other Operating Systems
+## Chapter 8) Other Operating Systems
 
 OS ( Version ) ( Issues )
 - [Android](https://www.android-x86.org/)    ( Android-x86 9.0-rc1 )                   ( cast screen, auto rotate broken )
