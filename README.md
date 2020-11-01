@@ -12,7 +12,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ## 4) OpenCore Release Version 1.2.0 and above should be used for macOS Big Sur and above.
 
 
-
+##
 ## Full Instruction Guide
 
 ## [Chapter 1) Quick Start Install](/1-QuickStart.md)
