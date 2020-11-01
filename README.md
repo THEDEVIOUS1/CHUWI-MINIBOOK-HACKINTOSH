@@ -1,6 +1,9 @@
 # CHUWI Minibook Hackintosh
 
-EFI files for hackintosh on the CHUWI Minibook, works on Catalina and Mojave with initial support for Big Sur.
+EFI files for hackintosh on the CHUWI Minibook.
+
+Full support for macOS 10.14.0 - 11.0.X (may work on older OS's but some features may not work)
+
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
 ![Catalina with working Graphics Acceleration](/images/Catalina.jpeg)
