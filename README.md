@@ -15,7 +15,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ##
 ## Full Instruction Guide
 
-# [Chapter 1) Quick Start Install](/1-QuickStart.md)
+### [Chapter 1) Quick Start Install](/1-QuickStart.md)
 [Chapter 2) BootCamp Install](/2-BootCamp.md)
 [Chapter 3) Changing the Display Orientation](/3-Orientation.md)
 [Chapter 4) Enabling HiDPI Mode](/4-HiDPI.md)
