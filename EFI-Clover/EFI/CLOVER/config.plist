@@ -10,7 +10,7 @@
 		<dict>
 			<key>#EnableC4</key>
 			<false/>
-			<key>#EnableC7</key>
+			<key>#NoOemTableId</key>
 			<false/>
 			<key>UseSystemIO</key>
 			<false/>
@@ -40,7 +40,7 @@
 			<false/>
 			<key>#UseSystemIO</key>
 			<false/>
-			<key>#NoOemTableId</key>
+			<key>#EnableC7</key>
 			<false/>
 			<key>Generate</key>
 			<dict>
@@ -164,6 +164,16 @@
 					<false/>
 					<key>Comment</key>
 					<string>_PTS to XPTS (Power on after shutdown issue)</string>
+				</dict>
+				<dict>
+					<key>Find</key>
+					<data>FDNfQ1JTAA==</data>
+					<key>Replace</key>
+					<data>FDNYQ1JTAA==</data>
+					<key>Disabled</key>
+					<false/>
+					<key>Comment</key>
+					<string>Touch Fix: Touch Patch</string>
 				</dict>
 			</array>
 			<key>#DropOEM_DSM</key>
@@ -375,10 +385,10 @@
 					<string>M</string>
 					<key>Volume</key>
 					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
-					<key>Arguments</key>
-					<string>Kernel=mach_kernel</string>
 					<key>Disabled</key>
 					<true/>
+					<key>Arguments</key>
+					<string>Kernel=mach_kernel</string>
 					<key>AddArguments</key>
 					<string>-v</string>
 					<key>Path</key>
@@ -419,18 +429,18 @@
 			<key>Legacy</key>
 			<array>
 				<dict>
-					<key>Disabled</key>
-					<true/>
+					<key>Volume</key>
+					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
 					<key>Type</key>
 					<string>Windows</string>
 					<key>Hidden</key>
 					<false/>
+					<key>Disabled</key>
+					<true/>
 					<key>Title</key>
 					<string>MyLegacyEntry</string>
 					<key>Hotkey</key>
 					<string>L</string>
-					<key>Volume</key>
-					<string>89433CD3-21F2-4D3C-95FC-722C48066D3A</string>
 				</dict>
 			</array>
 			<key>Tool</key>
@@ -442,10 +452,10 @@
 					<string>S</string>
 					<key>Volume</key>
 					<string>D68F1885-571C-4441-8DD5-F14803EFEF54</string>
-					<key>Arguments</key>
-					<string>-b</string>
 					<key>Disabled</key>
 					<false/>
+					<key>Arguments</key>
+					<string>-b</string>
 					<key>Path</key>
 					<string>\EFI\CLOVER\TOOLS\Shell64-v1.efi</string>
 					<key>Title</key>
@@ -467,13 +477,13 @@
 	<dict>
 		<key>#BusSpeedkHz</key>
 		<integer>133330</integer>
-		<key>#HWPEnable</key>
+		<key>#TurboDisable</key>
 		<true/>
 		<key>#TDP</key>
 		<integer>95</integer>
 		<key>#SavingMode</key>
 		<integer>7</integer>
-		<key>#TurboDisable</key>
+		<key>#HWPEnable</key>
 		<true/>
 		<key>#HWPValue</key>
 		<string>0x30002a01</string>
@@ -512,6 +522,21 @@
 				<key>device_type</key>
 				<string>Airport</string>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
+			<dict>
+				<key>AAPL,current-available</key>
+				<data>sAQ=</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>6AM=</data>
+				<key>AAPL,current-extra</key>
+				<data>vAI=</data>
+				<key>AAPL,clock-id</key>
+				<data>AQ==</data>
+				<key>built-in</key>
+				<data>AA==</data>
+				<key>device_type</key>
+				<string>EHCI</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,current-in-sleep</key>
@@ -533,21 +558,6 @@
 			<dict>
 				<key>built-in</key>
 				<data>AQ==</data>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1a,0x0)</key>
-			<dict>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AM=</data>
-				<key>AAPL,current-available</key>
-				<data>sAQ=</data>
-				<key>AAPL,current-extra</key>
-				<data>vAI=</data>
-				<key>AAPL,clock-id</key>
-				<data>AQ==</data>
-				<key>built-in</key>
-				<data>AA==</data>
-				<key>device_type</key>
-				<string>EHCI</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1c,0x5)/Pci(0x0,0x0)</key>
 			<dict>
@@ -589,17 +599,17 @@
 				<data>AwBmAQ==</data>
 				<key>graphic-options</key>
 				<data>DAAAAA==</data>
-				<key>model</key>
-				<string>Intel HD Graphics 4000</string>
 				<key>AAPL,HasLid</key>
 				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel HD Graphics 4000</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x0)</key>
 			<dict>
-				<key>AAPL,current-in-sleep</key>
-				<data>6AM=</data>
 				<key>AAPL,current-available</key>
 				<data>sAQ=</data>
+				<key>AAPL,current-in-sleep</key>
+				<data>6AM=</data>
 				<key>AAPL,current-extra</key>
 				<data>vAI=</data>
 				<key>AAPL,clock-id</key>
@@ -800,14 +810,14 @@
 			<string>0x11</string>
 			<key>#ProductID</key>
 			<string>0x9221</string>
+			<key>#VideoInputSignal</key>
+			<string>0xA1</string>
 			<key>Inject</key>
 			<false/>
 			<key>#VendorID</key>
 			<string>0x1006</string>
 			<key>#Inject</key>
 			<true/>
-			<key>#VideoInputSignal</key>
-			<string>0xA1</string>
 		</dict>
 		<key>#LoadVBios</key>
 		<false/>
