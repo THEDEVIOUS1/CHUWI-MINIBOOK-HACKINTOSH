@@ -11,8 +11,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ## *** NOTICE ***
 ### - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
 ### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
-### - OpenCore Release Version 1.1.0 and below should be used for macOS Catalina and below. 
-### - OpenCore Release Version 1.2.0 and above should be used for macOS Big Sur and above.
+### - OpenCore Release Version 1.1.0 may be used with macOS Catalina and below. May have greater compatibility with older OS's and supports use of HeliPort with Intel WiFi.
+### - OpenCore Release Version 1.2.0 and is Recommended for macOS Catalina and supports macOS Big Sur Betas. (Secure Boot Issues May Remain with some Big Sur Beta Versions)
 
 
 ##
