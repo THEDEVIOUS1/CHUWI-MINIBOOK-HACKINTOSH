@@ -50,7 +50,7 @@
 				<key>Comment</key>
 				<string>SSDT-Keys.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-Keys.aml</string>
 			</dict>
@@ -207,7 +207,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>X1EwNg==</data>
 				<key>Limit</key>
@@ -233,7 +233,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>X1EwNw==</data>
 				<key>Limit</key>
@@ -361,7 +361,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
-			<false/>
+			<true/>
 			<key>NormalizeHeaders</key>
 			<false/>
 			<key>RebaseRegions</key>
@@ -418,64 +418,51 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
-			<dict>
-				<key>device_type</key>
-				<string>ISA bridge</string>
-				<key>compatible</key>
-				<string>pci8086,9cc1</string>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,31,0</string>
-				<key>model</key>
-				<string>???</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>model</key>
-				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
-				<key>alc-layout-id</key>
-				<data>vAAAAA==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,3</string>
-				<key>layout-id</key>
-				<integer>88</integer>
+				<key>alc-layout-id</key>
+				<data>vAAAAA==</data>
 				<key>device-id</key>
 				<data>cKEAAA==</data>
 				<key>device_type</key>
 				<string>Audio device</string>
+				<key>layout-id</key>
+				<integer>88</integer>
+				<key>model</key>
+				<string>100 Series/C230 Series Chipset Family HD Audio Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>framebuffer-patch-enable</key>
+				<key>AAPL,ig-platform-id</key>
+				<data>AADAhw==</data>
+				<key>device-id</key>
+				<data>wIcAAA==</data>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
 				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-type</key>
 				<data>AAQAAA==</data>
-				<key>framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>AAPL,ig-platform-id</key>
-				<data>AADAhw==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
-				<key>framebuffer-con2-has-lspcon</key>
-				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 				<key>model</key>
 				<string>Intel UHD Graphics 617</string>
-				<key>enable-lspcon-support</key>
-				<data>AQAAAA==</data>
-				<key>device-id</key>
-				<data>wIcAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -586,6 +573,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BrightnessKeys.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BrightnessKeys</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -813,7 +818,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooI2C-v23.kext/Contents/PlugIns/VoodooGPIO.kext</string>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooGPIO.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -831,7 +836,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooI2C-v23.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
+				<string>VoodooI2C.kext/Contents/PlugIns/VoodooI2CServices.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -907,7 +912,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooPS2Mouse</string>
 				<key>MaxKernel</key>
@@ -957,7 +962,7 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>VoodooI2C-v23.kext</string>
+				<string>VoodooI2C.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
@@ -1051,7 +1056,7 @@
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
-			<string>Auto</string>
+			<string>x86_64</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
 		</dict>
@@ -1065,7 +1070,7 @@
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
-			<string>None</string>
+			<string>Auto</string>
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PickerAttributes</key>
@@ -1129,9 +1134,9 @@
 			<key>PasswordSalt</key>
 			<data></data>
 			<key>SecureBootModel</key>
-			<string>Disabled</string>
+			<string>Default</string>
 			<key>ScanPolicy</key>
-			<integer>0</integer>
+			<integer>26153731</integer>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1155,7 +1160,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>CleanNvram.efi</string>
 				<key>Enabled</key>
@@ -1230,11 +1235,11 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>igfxonln=1</string>
+				<string>keepsyms=1 igfxonln=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
-				<data>/w8AAA==</data>
+				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>DgAA</data>
 			</dict>
