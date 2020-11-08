@@ -2,7 +2,7 @@
 
 EFI files for hackintosh on the CHUWI Minibook.
 
-Full support for macOS 10.14.0 - 11.0.X (may work on older OS's but some features may not work)
+Full support for macOS 10.14.0 - 11.0.1 (may work on older OS's but some features may not work)
 
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
@@ -25,8 +25,9 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ### [Chapter 5) Enabling Reliable Sleep Button Support](/5-SleepButton.md)
 ### [Chapter 6) Setting Resolutions Over 1080p](/6-1080p&up.md)
 ### [Chapter 7) Additional Drivers](/7-drivers.md)
-### [Chapter 8) Other Operating Systems](/8-OtherOS.md)
-### [Chapter 9) Other OS's and OpenCore](/9-OtherOS&OC.md)
+### [Chapter 8) Booting Other OS's with OpenCore](/8-OtherOS&OC.md)
+### [Chapter 9) Other Operating Systems](/9-OtherOS.md)
+
 
 ## What works 
 
