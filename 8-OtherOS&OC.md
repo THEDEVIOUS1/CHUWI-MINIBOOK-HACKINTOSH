@@ -1,4 +1,4 @@
-## Chapter 9) Other OS's and OpenCore
+## Chapter 8) Other OS's and OpenCore
 
 ## Windows: 
 
