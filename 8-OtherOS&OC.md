@@ -1,4 +1,4 @@
-## Chapter 8) Other OS's and OpenCore
+## Chapter 8) Booting Other OS's with OpenCore
 
 ## Windows: 
 
