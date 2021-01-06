@@ -2,7 +2,7 @@
 
 EFI files for hackintosh on the CHUWI Minibook.
 
-Full support for macOS 10.14.0 - 11.0.1 (may work on older OS's but some features may not work)
+Full support for macOS 10.14.0 - 11.1.0 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions)
 
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
@@ -12,7 +12,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ### - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
 ### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
 ### - OpenCore Release Version 1.1.0 may be used with macOS Catalina and below. May have greater compatibility with older OS's and supports use of HeliPort with Intel WiFi.
-### - OpenCore Release Version 1.3.0 is Recommended for macOS Catalina and Big Sur.
+### - OpenCore Release Version 1.3.1 is Recommended for macOS Catalina and Big Sur.
 
 
 ##
@@ -45,7 +45,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 - TrackPoint 
 - HDMI / Type-C
 - Windows boot from OpenCore
-- TouchScreen / Stylus (Beta Support with issues: double click doesnt work well, touch won't disable with lid close but will on sleep, Voodooi2C 2.3 is currently supported only)(Please file all issues related to touch with the VoodooGoodix team)
+- TouchScreen / Stylus (Beta Support with issues: touch won't disable with lid closed in "Desktop" mode)(Please file all issues related to touch with the VoodooGoodix team)
 - Internal Wi-Fi 
     - Use Heliport for OpenCore 0.6.0 or below and for all Clover bootloaders. 
     - OpenCore 0.6.1 and higher now has native WiFi support with no other additional software
