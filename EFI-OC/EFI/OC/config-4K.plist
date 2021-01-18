@@ -1132,7 +1132,7 @@
 			<key>FuzzyMatch</key>
 			<false/>
 			<key>KernelArch</key>
-			<string>x86_64</string>
+			<string>Auto</string>
 			<key>KernelCache</key>
 			<string>Auto</string>
 		</dict>
@@ -1490,8 +1490,8 @@
 		<array>
 			<string>AudioDxe.efi</string>
 			<string>NvmExpressDxe.efi</string>
-			<string>VBoxHfs.efi</string>
 			<string>OpenCanopy.efi</string>
+			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
 		</array>
 		<key>Input</key>
