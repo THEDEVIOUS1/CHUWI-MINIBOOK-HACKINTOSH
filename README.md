@@ -2,7 +2,7 @@
 
 EFI files for hackintosh on the CHUWI Minibook.
 
-Full support for macOS 10.14.0 - 11.1.0 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
+Full support for macOS 10.14.0 - 11.2.0 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
 
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
