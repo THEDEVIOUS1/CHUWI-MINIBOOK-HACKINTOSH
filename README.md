@@ -2,7 +2,7 @@
 
 EFI files for hackintosh on the CHUWI Minibook.
 
-Full support for macOS 10.14.0 - 11.2.0 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
+Full support for macOS 10.14.0 - 11.2.1 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
 
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
@@ -12,8 +12,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ### - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
 ### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
 ### - OpenCore Release Version 1.1.0 may be used with macOS Catalina and below. May have greater compatibility with older OS's and supports use of HeliPort with Intel WiFi.
-### - EFI Release Version 1.3.X is Recommended for macOS Catalina and Big Sur
-### - EFI Release Version 1.4.X is Recommended for macOS Big Sur
+### - EFI Release Version 1.3.0 is Recommended for macOS Catalina and Big Sur
+### - EFI Release Version 1.4.1 and above is Recommended for macOS Big Sur
 
 ##
 ## Full Instruction Guide
@@ -32,7 +32,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ## What works 
 
 - Graphic Acceleration including 4K support
-- Bluetooth (some reliability issues may still exist)
+- Bluetooth (Intel Wifi chip causes interference with Bluetooth. Later Intel WiFi Kext releases may eventually resolve this issue. This is not an issue with the MiniBook or with current EFI programming.)
 - Brightness
 - Audio
 - Power Management
@@ -52,7 +52,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 - FileVault Supported
 - Recovery Supported
 - Fan Speed reporting (estimated speed not actual, requires use of special EFI located in Archive folder (NO LONGER BEING UPDATED))
-- Native Sleep Button Support (OpenCore only)
+- Sleep Button Support (Release 1.3.0 and up. See directions to enable button support.)
 
 ## Planned Features
 
