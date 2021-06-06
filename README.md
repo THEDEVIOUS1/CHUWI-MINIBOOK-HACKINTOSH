@@ -2,7 +2,7 @@
 
 EFI files for hackintosh on the CHUWI Minibook.
 
-Full support for macOS 10.14.0 - 11.2.2 (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
+Full support for macOS 10.14.0 - 11.4.x (may work on older OS's but some features may not work. Not all EFI releases work with all macOS versions, confirm you have installed the correct EFI for the OS version you are trying to run)
 
 If you see anything that could be added or changed don't hesitate to make a pull request.
 
@@ -12,8 +12,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ### - The Fan does not work on its own and requires a special patch. Please use EFI release version 0.1.0 or higher to enable automatic Fan operation. 
 ### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
 ### - OpenCore Release Version 1.1.0 may be used with macOS Catalina and below. May have greater compatibility with older OS's and supports use of HeliPort with Intel WiFi.
-### - EFI Release Version 1.3.1 is Recommended for macOS Catalina (Supports Big Sur)
-### - EFI Release Version 1.4.1 and above is Recommended for macOS Big Sur
+### - EFI Release Version 1.3.1 is Recommended for macOS Catalina 10.15.3 and below.
+### - EFI Release Version 1.4.1 and above is Recommended for Catalina 10.15.4 and newer.
 ### - Due to MiniBook hardware failure, releases will be slower going forward. Releases will now only occur when a major fix or feature can be implemented or if an OpenCore release will improve the use of the MiniBook. 
 
 ##
