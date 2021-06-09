@@ -13,7 +13,8 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ### - Final Clover Release Version 1.1.0 (Clover supports macOS Catalina and below)
 ### - OpenCore Release Version 1.1.0 may be used with macOS Catalina and below. May have greater compatibility with older OS's and supports use of HeliPort with Intel WiFi.
 ### - EFI Release Version 1.3.1 is Recommended for macOS Catalina 10.15.3 and below.
-### - EFI Release Version 1.4.1 and above is Recommended for Catalina 10.15.4 and newer.
+### - EFI Release Version 1.4.1 and above is Recommended for Catalina 10.15.4 through Big Sur 11.3.x.
+### - EFI Release Version 1.7.0 and above is Recommended for Big Sur 11.3.0 and above, including Monterey 12.0.0 Beta 1
 
 
 ##
@@ -33,6 +34,7 @@ If you see anything that could be added or changed don't hesitate to make a pull
 ## What works 
 
 - Graphic Acceleration including 4K support
+- OpenCore Boot-Loader orientation corrected to landscape mode
 - Bluetooth (Intel Wifi chip causes interference with Bluetooth. Later Intel WiFi Kext releases may eventually resolve this issue. This is not an issue with the MiniBook or with current EFI programming.)
 - Brightness
 - Audio
@@ -52,7 +54,6 @@ If you see anything that could be added or changed don't hesitate to make a pull
     - OpenCore 0.6.1 and higher now has native WiFi support with no other additional software
 - FileVault Supported
 - Recovery Supported
-- Fan Speed reporting (estimated speed not actual, requires use of special EFI located in Archive folder (NO LONGER BEING UPDATED))
 - Sleep Button Support (Release 1.3.0 and up. See directions to enable button support.)
 
 ## Planned Features
